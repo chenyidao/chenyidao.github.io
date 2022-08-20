@@ -1,136 +1,163 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tags on 合山雷公马</title>
-    <link>https://www.chenyidao.github.io/tags/</link>
-    <description>Recent content in Tags on 合山雷公马</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 14 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.chenyidao.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>学习</title>
-      <link>https://www.chenyidao.github.io/tags/%E5%AD%A6%E4%B9%A0/</link>
-      <pubDate>Sun, 14 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.chenyidao.github.io/tags/%E5%AD%A6%E4%B9%A0/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>思考</title>
-      <link>https://www.chenyidao.github.io/tags/%E6%80%9D%E8%80%83/</link>
-      <pubDate>Sun, 14 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.chenyidao.github.io/tags/%E6%80%9D%E8%80%83/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>生活</title>
-      <link>https://www.chenyidao.github.io/tags/%E7%94%9F%E6%B4%BB/</link>
-      <pubDate>Sun, 14 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.chenyidao.github.io/tags/%E7%94%9F%E6%B4%BB/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>https://www.chenyidao.github.io/tags/hugo/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.chenyidao.github.io/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>themes</title>
-      <link>https://www.chenyidao.github.io/tags/themes/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.chenyidao.github.io/tags/themes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>configuration</title>
-      <link>https://www.chenyidao.github.io/tags/configuration/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.chenyidao.github.io/tags/configuration/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>development</title>
-      <link>https://www.chenyidao.github.io/tags/development/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.chenyidao.github.io/tags/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>docs</title>
-      <link>https://www.chenyidao.github.io/tags/docs/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.chenyidao.github.io/tags/docs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>go</title>
-      <link>https://www.chenyidao.github.io/tags/go/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.chenyidao.github.io/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>golang</title>
-      <link>https://www.chenyidao.github.io/tags/golang/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.chenyidao.github.io/tags/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>templates</title>
-      <link>https://www.chenyidao.github.io/tags/templates/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.chenyidao.github.io/tags/templates/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tutorial</title>
-      <link>https://www.chenyidao.github.io/tags/tutorial/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.chenyidao.github.io/tags/tutorial/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jekyll</title>
-      <link>https://www.chenyidao.github.io/tags/jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.chenyidao.github.io/tags/jekyll/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>test</title>
-      <link>https://www.chenyidao.github.io/tags/test/</link>
-      <pubDate>Sun, 05 Jan 1012 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.chenyidao.github.io/tags/test/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>Tags on 合山雷公马</title>
+        <link>https://chenyidao.github.io/tags/</link>
+        <description>Recent content in Tags on 合山雷公马</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Wed, 17 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://chenyidao.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>C&#43;&#43;</title>
+        <link>https://chenyidao.github.io/tags/c&#43;&#43;/</link>
+        <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://chenyidao.github.io/tags/c&#43;&#43;/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>git</title>
+        <link>https://chenyidao.github.io/tags/git/</link>
+        <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://chenyidao.github.io/tags/git/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Java</title>
+        <link>https://chenyidao.github.io/tags/java/</link>
+        <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://chenyidao.github.io/tags/java/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>linux</title>
+        <link>https://chenyidao.github.io/tags/linux/</link>
+        <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://chenyidao.github.io/tags/linux/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Scala</title>
+        <link>https://chenyidao.github.io/tags/scala/</link>
+        <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://chenyidao.github.io/tags/scala/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>测试</title>
+        <link>https://chenyidao.github.io/tags/%E6%B5%8B%E8%AF%95/</link>
+        <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://chenyidao.github.io/tags/%E6%B5%8B%E8%AF%95/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>工具</title>
+        <link>https://chenyidao.github.io/tags/%E5%B7%A5%E5%85%B7/</link>
+        <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://chenyidao.github.io/tags/%E5%B7%A5%E5%85%B7/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>激活</title>
+        <link>https://chenyidao.github.io/tags/%E6%BF%80%E6%B4%BB/</link>
+        <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://chenyidao.github.io/tags/%E6%BF%80%E6%B4%BB/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>算法</title>
+        <link>https://chenyidao.github.io/tags/%E7%AE%97%E6%B3%95/</link>
+        <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://chenyidao.github.io/tags/%E7%AE%97%E6%B3%95/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>css</title>
+        <link>https://chenyidao.github.io/tags/css/</link>
+        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://chenyidao.github.io/tags/css/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>html</title>
+        <link>https://chenyidao.github.io/tags/html/</link>
+        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://chenyidao.github.io/tags/html/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>markdown</title>
+        <link>https://chenyidao.github.io/tags/markdown/</link>
+        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://chenyidao.github.io/tags/markdown/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>themes</title>
+        <link>https://chenyidao.github.io/tags/themes/</link>
+        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://chenyidao.github.io/tags/themes/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>privacy</title>
+        <link>https://chenyidao.github.io/tags/privacy/</link>
+        <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://chenyidao.github.io/tags/privacy/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>shortcodes</title>
+        <link>https://chenyidao.github.io/tags/shortcodes/</link>
+        <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://chenyidao.github.io/tags/shortcodes/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>ماركداون</title>
+        <link>https://chenyidao.github.io/tags/%D9%85%D8%A7%D8%B1%D9%83%D8%AF%D8%A7%D9%88%D9%86/</link>
+        <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://chenyidao.github.io/tags/%D9%85%D8%A7%D8%B1%D9%83%D8%AF%D8%A7%D9%88%D9%86/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>نص</title>
+        <link>https://chenyidao.github.io/tags/%D9%86%D8%B5/</link>
+        <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://chenyidao.github.io/tags/%D9%86%D8%B5/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>وسم مع فراغات</title>
+        <link>https://chenyidao.github.io/tags/%D9%88%D8%B3%D9%85-%D9%85%D8%B9-%D9%81%D8%B1%D8%A7%D8%BA%D8%A7%D8%AA/</link>
+        <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://chenyidao.github.io/tags/%D9%88%D8%B3%D9%85-%D9%85%D8%B9-%D9%81%D8%B1%D8%A7%D8%BA%D8%A7%D8%AA/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>emoji</title>
+        <link>https://chenyidao.github.io/tags/emoji/</link>
+        <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://chenyidao.github.io/tags/emoji/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
 </rss>
