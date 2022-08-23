@@ -1,17 +1,76 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='linux 常用操作'><title>linux 常用操作</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='linux 常用操作 ubuntu 图形化桌面搭建 搭建 参考：https://help.aliyun.com/document_detail/59330.html
+FQA Q：A VNC server is already running as :1
+A：https://blog.csdn.net/lxyoucan/article/details/119024402
+Q：装了ubuntu可视化界面，重启可视化界面之后访问不了外网了
+A：
+原因分析
+Ubuntu环境安装桌面环境，安装过程中会覆盖dns解析的配置（即会清空/etc/resolv.conf），导致无法解析任何域名。
+另外重启等也可能会修改/etc/resolv.conf
+解决方法：重新配置代理
+1、先去ping 代理或者对应的IP，如果能ping通，则说明DNS域名解析有问题；如果代理IP都ping不通，那代理本身就有问题。
+2、如果是DNS域名有问题，排查文件 /etc/resolv.conf内容是否正确 查看发现里面内容已被覆盖清空，需要重新配置（网上搜一下配置内容）
+3、配置代理
+1 2 3 4 export http_proxy=&amp;#39;http://proxy.xxx.com:8080&amp;#39; export https_proxy=&amp;#39;http://proxy.xxx.com:8080&amp;#39; export ftp_proxy=&amp;#39;hhttp://proxy.xxx.com:8080&amp;#39; export no_proxy=&amp;#39;localhost,127.0.0.1&amp;#39; Q：密码忘记了，如何重置
+A：
+1 vncpassword Q：vnc客户端，偶尔出现死机的情况，重启命令
+A：
+1 2 3 4 5 # 停止服务 vncserver -kill:1 # 启动一个新的VNC并指定分辨率 vncserver -geometry 1920x1080:1 Q：VNCViewer 与 Windows端文本复制粘贴
+A：
+环境信息
+1 2 3 主机系统：Win10 VNCViewer端：Ubuntu 解决方法'><title>linux 常用操作</title>
 
 <link rel='canonical' href='https://chenyidao.github.io/p/linux-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/'>
 
 <link rel="stylesheet" href="/scss/style.min.84ac5aff483852b9a085950fe2e0a15cf1884f19644ee3c947366e486ef47c84.css"><meta property='og:title' content='linux 常用操作'>
-<meta property='og:description' content='linux 常用操作'>
+<meta property='og:description' content='linux 常用操作 ubuntu 图形化桌面搭建 搭建 参考：https://help.aliyun.com/document_detail/59330.html
+FQA Q：A VNC server is already running as :1
+A：https://blog.csdn.net/lxyoucan/article/details/119024402
+Q：装了ubuntu可视化界面，重启可视化界面之后访问不了外网了
+A：
+原因分析
+Ubuntu环境安装桌面环境，安装过程中会覆盖dns解析的配置（即会清空/etc/resolv.conf），导致无法解析任何域名。
+另外重启等也可能会修改/etc/resolv.conf
+解决方法：重新配置代理
+1、先去ping 代理或者对应的IP，如果能ping通，则说明DNS域名解析有问题；如果代理IP都ping不通，那代理本身就有问题。
+2、如果是DNS域名有问题，排查文件 /etc/resolv.conf内容是否正确 查看发现里面内容已被覆盖清空，需要重新配置（网上搜一下配置内容）
+3、配置代理
+1 2 3 4 export http_proxy=&amp;#39;http://proxy.xxx.com:8080&amp;#39; export https_proxy=&amp;#39;http://proxy.xxx.com:8080&amp;#39; export ftp_proxy=&amp;#39;hhttp://proxy.xxx.com:8080&amp;#39; export no_proxy=&amp;#39;localhost,127.0.0.1&amp;#39; Q：密码忘记了，如何重置
+A：
+1 vncpassword Q：vnc客户端，偶尔出现死机的情况，重启命令
+A：
+1 2 3 4 5 # 停止服务 vncserver -kill:1 # 启动一个新的VNC并指定分辨率 vncserver -geometry 1920x1080:1 Q：VNCViewer 与 Windows端文本复制粘贴
+A：
+环境信息
+1 2 3 主机系统：Win10 VNCViewer端：Ubuntu 解决方法'>
 <meta property='og:url' content='https://chenyidao.github.io/p/linux-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/'>
 <meta property='og:site_name' content='合山雷公马'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='工具' /><meta property='article:tag' content='linux' /><meta property='article:published_time' content='2022-08-17T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2022-08-17T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="linux 常用操作">
-<meta name="twitter:description" content="linux 常用操作"><style>
+<meta name="twitter:description" content="linux 常用操作 ubuntu 图形化桌面搭建 搭建 参考：https://help.aliyun.com/document_detail/59330.html
+FQA Q：A VNC server is already running as :1
+A：https://blog.csdn.net/lxyoucan/article/details/119024402
+Q：装了ubuntu可视化界面，重启可视化界面之后访问不了外网了
+A：
+原因分析
+Ubuntu环境安装桌面环境，安装过程中会覆盖dns解析的配置（即会清空/etc/resolv.conf），导致无法解析任何域名。
+另外重启等也可能会修改/etc/resolv.conf
+解决方法：重新配置代理
+1、先去ping 代理或者对应的IP，如果能ping通，则说明DNS域名解析有问题；如果代理IP都ping不通，那代理本身就有问题。
+2、如果是DNS域名有问题，排查文件 /etc/resolv.conf内容是否正确 查看发现里面内容已被覆盖清空，需要重新配置（网上搜一下配置内容）
+3、配置代理
+1 2 3 4 export http_proxy=&amp;#39;http://proxy.xxx.com:8080&amp;#39; export https_proxy=&amp;#39;http://proxy.xxx.com:8080&amp;#39; export ftp_proxy=&amp;#39;hhttp://proxy.xxx.com:8080&amp;#39; export no_proxy=&amp;#39;localhost,127.0.0.1&amp;#39; Q：密码忘记了，如何重置
+A：
+1 vncpassword Q：vnc客户端，偶尔出现死机的情况，重启命令
+A：
+1 2 3 4 5 # 停止服务 vncserver -kill:1 # 启动一个新的VNC并指定分辨率 vncserver -geometry 1920x1080:1 Q：VNCViewer 与 Windows端文本复制粘贴
+A：
+环境信息
+1 2 3 主机系统：Win10 VNCViewer端：Ubuntu 解决方法">
+    <link rel="shortcut icon" href="favicon.ico" />
+<style>
     :root {
         --article-font-family: "Noto Serif SC", var(--base-font-family);
     }
@@ -261,10 +320,6 @@
         </h2>
     
         
-        <h3 class="article-subtitle">
-            linux 常用操作
-        </h3>
-        
     </div>
 
     
@@ -309,8 +364,7 @@
     <section class="article-content">
     
     
-    <p>[toc]</p>
-<h1 id="linux-常用操作">linux 常用操作</h1>
+    <h1 id="linux-常用操作">linux 常用操作</h1>
 <h2 id="ubuntu-图形化桌面搭建">ubuntu 图形化桌面搭建</h2>
 <h3 id="搭建">搭建</h3>
 <p>参考：https://help.aliyun.com/document_detail/59330.html</p>
@@ -451,7 +505,7 @@
             
                 
 <article class="">
-    <a href="/p/git-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/">
+    <a href="/p/git/">
         
         
 

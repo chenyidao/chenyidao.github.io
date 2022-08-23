@@ -8,10 +8,10 @@
         <language>zh-cn</language>
         <lastBuildDate>Wed, 17 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://chenyidao.github.io/categories/technology/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>git 常用操作</title>
-        <link>https://chenyidao.github.io/p/git-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link>
+        <link>https://chenyidao.github.io/p/git/</link>
         <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://chenyidao.github.io/p/git-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid>
+        <guid>https://chenyidao.github.io/p/git/</guid>
         <description>&lt;h2 id=&#34;git概述&#34;&gt;git概述&lt;/h2&gt;
 &lt;h2 id=&#34;git-常用操作&#34;&gt;git 常用操作&lt;/h2&gt;
 &lt;h3 id=&#34;git-配置&#34;&gt;git 配置&lt;/h3&gt;
@@ -896,8 +896,7 @@ $$&lt;/p&gt;
         <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
         
         <guid>https://chenyidao.github.io/p/linux-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid>
-        <description>&lt;p&gt;[toc]&lt;/p&gt;
-&lt;h1 id=&#34;linux-常用操作&#34;&gt;linux 常用操作&lt;/h1&gt;
+        <description>&lt;h1 id=&#34;linux-常用操作&#34;&gt;linux 常用操作&lt;/h1&gt;
 &lt;h2 id=&#34;ubuntu-图形化桌面搭建&#34;&gt;ubuntu 图形化桌面搭建&lt;/h2&gt;
 &lt;h3 id=&#34;搭建&#34;&gt;搭建&lt;/h3&gt;
 &lt;p&gt;参考：https://help.aliyun.com/document_detail/59330.html&lt;/p&gt;
@@ -1002,8 +1001,7 @@ $$&lt;/p&gt;
         <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
         
         <guid>https://chenyidao.github.io/p/%E5%B8%B8%E7%94%A8%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</guid>
-        <description>&lt;p&gt;[toc]&lt;/p&gt;
-&lt;h1 id=&#34;常用开发工具&#34;&gt;常用开发工具&lt;/h1&gt;
+        <description>&lt;h1 id=&#34;常用开发工具&#34;&gt;常用开发工具&lt;/h1&gt;
 &lt;h2 id=&#34;网站类&#34;&gt;网站类&lt;/h2&gt;
 &lt;p&gt;1、&lt;a class=&#34;link&#34; href=&#34;https://unbug.github.io/codelf/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;codeIf&lt;/a&gt;&lt;/p&gt;
@@ -1267,18 +1265,14 @@ Pexels&lt;/p&gt;
     &gt;https://pan.baidu.com/s/1QDXiR3kAn4ZgnT9nhM2qiA&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;提取码：w7ww&lt;/p&gt;
 &lt;p&gt;资源中有3个文件&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://chenyidao.github.io/p/%E8%BD%AF%E4%BB%B6%E6%BF%80%E6%B4%BB/typora%E7%A0%B4%E8%A7%A3.png&#34;
-	width=&#34;1091&#34;
-	height=&#34;393&#34;
-	srcset=&#34;https://chenyidao.github.io/p/%E8%BD%AF%E4%BB%B6%E6%BF%80%E6%B4%BB/typora%E7%A0%B4%E8%A7%A3_hu1b71b83af7d75d95b5844938987a199a_28179_480x0_resize_box_3.png 480w, https://chenyidao.github.io/p/%E8%BD%AF%E4%BB%B6%E6%BF%80%E6%B4%BB/typora%E7%A0%B4%E8%A7%A3_hu1b71b83af7d75d95b5844938987a199a_28179_1024x0_resize_box_3.png 1024w&#34;
+&lt;p&gt;&lt;img src=&#34;https://chenyidao.github.io/typora%e7%a0%b4%e8%a7%a3.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Florian Klauer on Unsplash&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;277&#34;
-		data-flex-basis=&#34;666px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;当前已经保存到我的百度网盘，/typora激活目录下&lt;/strong&gt;&lt;/p&gt;
