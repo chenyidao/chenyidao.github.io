@@ -1,93 +1,50 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>激活 on 合山雷公马</title>
-        <link>https://chenyidao.github.io/tags/%E6%BF%80%E6%B4%BB/</link>
-        <description>Recent content in 激活 on 合山雷公马</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <lastBuildDate>Wed, 17 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://chenyidao.github.io/tags/%E6%BF%80%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>软件激活</title>
-        <link>https://chenyidao.github.io/p/%E8%BD%AF%E4%BB%B6%E6%BF%80%E6%B4%BB/</link>
-        <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://chenyidao.github.io/p/%E8%BD%AF%E4%BB%B6%E6%BF%80%E6%B4%BB/</guid>
-        <description>&lt;h1 id=&#34;各种软件激活&#34;&gt;各种软件激活&lt;/h1&gt;
-&lt;h2 id=&#34;typora&#34;&gt;typora&lt;/h2&gt;
-&lt;p&gt;2022-08-17 日激活&lt;/p&gt;
-&lt;p&gt;参考激活方式：https://www.cnblogs.com/hackettt/p/16335288.html&lt;/p&gt;
-&lt;h3 id=&#34;下载&#34;&gt;下载&lt;/h3&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://typoraio.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;typora官方中文站&lt;/a&gt;：https://typoraio.cn/  （ps：高版本的可能会出现Error问题，网盘资源中的typora版本亲测没问题）&lt;/p&gt;
-&lt;p&gt;百度云网盘资源：&lt;/p&gt;
-&lt;p&gt;链接：&lt;a class=&#34;link&#34; href=&#34;https://pan.baidu.com/s/1QDXiR3kAn4ZgnT9nhM2qiA&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://pan.baidu.com/s/1QDXiR3kAn4ZgnT9nhM2qiA&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;提取码：w7ww&lt;/p&gt;
-&lt;p&gt;资源中有3个文件&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://chenyidao.github.io/typora%e7%a0%b4%e8%a7%a3.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;Photo by Florian Klauer on Unsplash&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;当前已经保存到我的百度网盘，/typora激活目录下&lt;/strong&gt;&lt;/p&gt;
-&lt;h3 id=&#34;破解&#34;&gt;破解&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;替换app.asar文件&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;typora安装后，将百度云盘下载的app.asar.txt 文件中的后缀.txt去掉，并拷贝到typora安装路径下替换&lt;/p&gt;
-&lt;p&gt;我的路径是：D:\Typora\resources 根据自己的安装路径进行替换&lt;/p&gt;
-&lt;p&gt;​	&lt;img src=&#34;https://typora-1304221450.cos.ap-guangzhou.myqcloud.com/typora/image-20220601172416583.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;img&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;提示&lt;/strong&gt;
-若文件名中未展示扩展名（.txt），请打开计算机，查看，勾选文件扩展名，使文件显示扩展名&lt;/p&gt;
-&lt;p&gt;​	&lt;img src=&#34;https://typora-1304221450.cos.ap-guangzhou.myqcloud.com/typora/image-20220601172533080.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;img&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;h3 id=&#34;输入序列号激活&#34;&gt;输入序列号激活&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;打开 typora ，点击“输入序列号”：&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;邮箱一栏中任意填写（但须保证邮箱地址格式正确），输入序列号(&lt;strong&gt;在key.txt文件中，任选一条&lt;/strong&gt;)，点击“激活”。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;出现已激活即可&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;​	&lt;img src=&#34;https://typora-1304221450.cos.ap-guangzhou.myqcloud.com/typora/image-20220601173354172.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;image-20220601173354172&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;h2 id=&#34;idea-激活&#34;&gt;IDEA 激活&lt;/h2&gt;
-&lt;p&gt;2022-06-06日激活&lt;/p&gt;
-&lt;p&gt;参考：https://www.cnblogs.com/fanbi/p/16227293.html&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>激活 on 合山雷公马</title><link>https://chenyidao.github.io/tags/%E6%BF%80%E6%B4%BB/</link><description>Recent content in 激活 on 合山雷公马</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 17 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://chenyidao.github.io/tags/%E6%BF%80%E6%B4%BB/index.xml" rel="self" type="application/rss+xml"/><item><title>软件激活</title><link>https://chenyidao.github.io/p/%E8%BD%AF%E4%BB%B6%E6%BF%80%E6%B4%BB/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/%E8%BD%AF%E4%BB%B6%E6%BF%80%E6%B4%BB/</guid><description>&lt;h1 id="各种软件激活">各种软件激活&lt;/h1>
+&lt;h2 id="typora">typora&lt;/h2>
+&lt;p>2022-08-17 日激活&lt;/p>
+&lt;p>参考激活方式：https://www.cnblogs.com/hackettt/p/16335288.html&lt;/p>
+&lt;h3 id="下载">下载&lt;/h3>
+&lt;p>&lt;a class="link" href="https://typoraio.cn/" target="_blank" rel="noopener"
+>typora官方中文站&lt;/a>：https://typoraio.cn/ （ps：高版本的可能会出现Error问题，网盘资源中的typora版本亲测没问题）&lt;/p>
+&lt;p>百度云网盘资源：&lt;/p>
+&lt;p>链接：&lt;a class="link" href="https://pan.baidu.com/s/1QDXiR3kAn4ZgnT9nhM2qiA" target="_blank" rel="noopener"
+>https://pan.baidu.com/s/1QDXiR3kAn4ZgnT9nhM2qiA&lt;/a>&lt;/p>
+&lt;p>提取码：w7ww&lt;/p>
+&lt;p>资源中有3个文件&lt;/p>
+&lt;p>&lt;img src="https://chenyidao.github.io/typora%e7%a0%b4%e8%a7%a3.png"
+loading="lazy"
+alt="Photo by Florian Klauer on Unsplash"
+>&lt;/p>
+&lt;p>&lt;strong>当前已经保存到我的百度网盘，/typora激活目录下&lt;/strong>&lt;/p>
+&lt;h3 id="破解">破解&lt;/h3>
+&lt;p>&lt;strong>替换app.asar文件&lt;/strong>&lt;/p>
+&lt;p>typora安装后，将百度云盘下载的app.asar.txt 文件中的后缀.txt去掉，并拷贝到typora安装路径下替换&lt;/p>
+&lt;p>我的路径是：D:\Typora\resources 根据自己的安装路径进行替换&lt;/p>
+&lt;p>​ &lt;img src="https://typora-1304221450.cos.ap-guangzhou.myqcloud.com/typora/image-20220601172416583.png"
+loading="lazy"
+alt="img"
+>&lt;/p>
+&lt;p>&lt;strong>提示&lt;/strong>
+若文件名中未展示扩展名（.txt），请打开计算机，查看，勾选文件扩展名，使文件显示扩展名&lt;/p>
+&lt;p>​ &lt;img src="https://typora-1304221450.cos.ap-guangzhou.myqcloud.com/typora/image-20220601172533080.png"
+loading="lazy"
+alt="img"
+>&lt;/p>
+&lt;h3 id="输入序列号激活">输入序列号激活&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>打开 typora ，点击“输入序列号”：&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>邮箱一栏中任意填写（但须保证邮箱地址格式正确），输入序列号(&lt;strong>在key.txt文件中，任选一条&lt;/strong>)，点击“激活”。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>出现已激活即可&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>​ &lt;img src="https://typora-1304221450.cos.ap-guangzhou.myqcloud.com/typora/image-20220601173354172.png"
+loading="lazy"
+alt="image-20220601173354172"
+>&lt;/p>
+&lt;h2 id="idea-激活">IDEA 激活&lt;/h2>
+&lt;p>2022-06-06日激活&lt;/p>
+&lt;p>参考：https://www.cnblogs.com/fanbi/p/16227293.html&lt;/p></description></item></channel></rss>

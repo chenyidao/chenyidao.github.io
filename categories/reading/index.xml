@@ -1,99 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>阅读 on 合山雷公马</title>
-        <link>https://chenyidao.github.io/categories/reading/</link>
-        <description>Recent content in 阅读 on 合山雷公马</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <lastBuildDate>Wed, 17 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://chenyidao.github.io/categories/reading/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>读书笔记</title>
-        <link>https://chenyidao.github.io/p/reading/</link>
-        <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://chenyidao.github.io/p/reading/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>技术类</title>
-        <link>https://chenyidao.github.io/p/reading/</link>
-        <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://chenyidao.github.io/p/reading/</guid>
-        <description>&lt;h2 id=&#34;软件技术类&#34;&gt;软件技术类&lt;/h2&gt;
-&lt;h3 id=&#34;基础&#34;&gt;基础&lt;/h3&gt;
-&lt;h3 id=&#34;进阶&#34;&gt;进阶&lt;/h3&gt;
-&lt;h3 id=&#34;应用&#34;&gt;应用&lt;/h3&gt;
-&lt;h2 id=&#34;计算机科学类&#34;&gt;计算机科学类&lt;/h2&gt;
-&lt;h3 id=&#34;基础-1&#34;&gt;基础&lt;/h3&gt;
-&lt;h3 id=&#34;进阶-1&#34;&gt;进阶&lt;/h3&gt;
-&lt;h3 id=&#34;应用-1&#34;&gt;应用&lt;/h3&gt;
-</description>
-        </item>
-        <item>
-        <title>经济类</title>
-        <link>https://chenyidao.github.io/p/reading/</link>
-        <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://chenyidao.github.io/p/reading/</guid>
-        <description>&lt;h2 id=&#34;基础&#34;&gt;基础&lt;/h2&gt;
-&lt;h2 id=&#34;进阶&#34;&gt;进阶&lt;/h2&gt;
-&lt;h2 id=&#34;应用&#34;&gt;应用&lt;/h2&gt;
-</description>
-        </item>
-        <item>
-        <title>历史类</title>
-        <link>https://chenyidao.github.io/p/reading/</link>
-        <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://chenyidao.github.io/p/reading/</guid>
-        <description>&lt;h2 id=&#34;国内简史&#34;&gt;国内简史&lt;/h2&gt;
-&lt;h2 id=&#34;国外史&#34;&gt;国外史&lt;/h2&gt;
-</description>
-        </item>
-        <item>
-        <title>人物传记类</title>
-        <link>https://chenyidao.github.io/p/reading/</link>
-        <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://chenyidao.github.io/p/reading/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>软件技术类</title>
-        <link>https://chenyidao.github.io/p/reading/</link>
-        <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://chenyidao.github.io/p/reading/</guid>
-        <description>&lt;h2 id=&#34;软件技术类&#34;&gt;软件技术类&lt;/h2&gt;
-&lt;h3 id=&#34;基础&#34;&gt;基础&lt;/h3&gt;
-&lt;h3 id=&#34;进阶&#34;&gt;进阶&lt;/h3&gt;
-&lt;h3 id=&#34;应用&#34;&gt;应用&lt;/h3&gt;
-</description>
-        </item>
-        <item>
-        <title>阅读计划</title>
-        <link>https://chenyidao.github.io/p/reading/</link>
-        <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://chenyidao.github.io/p/reading/</guid>
-        <description>&lt;h2 id=&#34;heading&#34;&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;创业类&#34;&gt;创业类&lt;/h2&gt;
-&lt;h2 id=&#34;历史类&#34;&gt;历史类&lt;/h2&gt;
-&lt;h2 id=&#34;heading-1&#34;&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;小说类&#34;&gt;小说类&lt;/h2&gt;
-&lt;h2 id=&#34;数学类&#34;&gt;数学类&lt;/h2&gt;
-&lt;h2 id=&#34;经济类&#34;&gt;经济类&lt;/h2&gt;
-</description>
-        </item>
-        <item>
-        <title>哲学类</title>
-        <link>https://chenyidao.github.io/p/reading/</link>
-        <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://chenyidao.github.io/p/reading/</guid>
-        <description></description>
-        </item>
-        
-    </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>阅读 on 合山雷公马</title><link>https://chenyidao.github.io/categories/reading/</link><description>Recent content in 阅读 on 合山雷公马</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 17 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://chenyidao.github.io/categories/reading/index.xml" rel="self" type="application/rss+xml"/><item><title>读书笔记</title><link>https://chenyidao.github.io/p/reading/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/reading/</guid><description/></item><item><title>技术类</title><link>https://chenyidao.github.io/p/%E6%8A%80%E6%9C%AF%E7%B1%BB/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/%E6%8A%80%E6%9C%AF%E7%B1%BB/</guid><description>&lt;h2 id="软件技术类">软件技术类&lt;/h2>
+&lt;h3 id="基础">基础&lt;/h3>
+&lt;h3 id="进阶">进阶&lt;/h3>
+&lt;h3 id="应用">应用&lt;/h3>
+&lt;h2 id="计算机科学类">计算机科学类&lt;/h2>
+&lt;h3 id="基础-1">基础&lt;/h3>
+&lt;h3 id="进阶-1">进阶&lt;/h3>
+&lt;h3 id="应用-1">应用&lt;/h3></description></item><item><title>经济类</title><link>https://chenyidao.github.io/p/%E7%BB%8F%E6%B5%8E%E7%B1%BB/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/%E7%BB%8F%E6%B5%8E%E7%B1%BB/</guid><description>&lt;h2 id="基础">基础&lt;/h2>
+&lt;h2 id="进阶">进阶&lt;/h2>
+&lt;h2 id="应用">应用&lt;/h2></description></item><item><title>历史类</title><link>https://chenyidao.github.io/p/%E5%8E%86%E5%8F%B2%E7%B1%BB/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/%E5%8E%86%E5%8F%B2%E7%B1%BB/</guid><description>&lt;h2 id="国内简史">国内简史&lt;/h2>
+&lt;h2 id="国外史">国外史&lt;/h2></description></item><item><title>人物传记类</title><link>https://chenyidao.github.io/p/%E4%BA%BA%E7%89%A9%E4%BC%A0%E8%AE%B0%E7%B1%BB/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/%E4%BA%BA%E7%89%A9%E4%BC%A0%E8%AE%B0%E7%B1%BB/</guid><description/></item><item><title>软件技术类</title><link>https://chenyidao.github.io/p/%E8%BD%AF%E4%BB%B6%E6%8A%80%E6%9C%AF%E7%B1%BB/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/%E8%BD%AF%E4%BB%B6%E6%8A%80%E6%9C%AF%E7%B1%BB/</guid><description>&lt;h2 id="软件技术类">软件技术类&lt;/h2>
+&lt;h3 id="基础">基础&lt;/h3>
+&lt;h3 id="进阶">进阶&lt;/h3>
+&lt;h3 id="应用">应用&lt;/h3></description></item><item><title>哲学类</title><link>https://chenyidao.github.io/p/%E5%93%B2%E5%AD%A6%E7%B1%BB/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/%E5%93%B2%E5%AD%A6%E7%B1%BB/</guid><description/></item></channel></rss>
