@@ -1,0 +1,310 @@
+<!doctype html><html lang=zh-cn dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="git概述 git 常用操作 git 配置 安装git 1 2 # 查看是否安装成功 git --version 查看当前配置信息 1 git config --global --list 配置git 设置用户名和邮箱
+1 2 git config --global use.name &amp;#34;name&amp;#34; git config --global user.email &amp;#34;email@domain.com&amp;#34; 生成秘钥并将秘钥复制到github上
+1 2 3 4 5 6 7 8 # 生成秘钥，系统会提示key的保存位置（一般是~/.ssh目录下）和指定口令，如果不需要则保持默认，连续三次回车即可 ssh-keygen # 获取生成的秘钥信息 cat ~/.ssh id_rsa.pub # 将秘钥复制到github # 获取到秘钥信息后将内容粘贴到github账号管理的添加SSH KEY界面中即可 版本信息 ^方式表示
+1 2 3 4 5 6 7 HEAD 表示当前commit HEAD^ 上一个版本commit HEAD^^ 上上个版本commit 以此类推 ~数字方式表示"><title>【Git】常用操作</title><link rel=canonical href=https://chenyidao.github.io/p/git%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/><link rel=stylesheet href=/scss/style.min.84ac5aff483852b9a085950fe2e0a15cf1884f19644ee3c947366e486ef47c84.css><meta property="og:title" content="【Git】常用操作"><meta property="og:description" content="git概述 git 常用操作 git 配置 安装git 1 2 # 查看是否安装成功 git --version 查看当前配置信息 1 git config --global --list 配置git 设置用户名和邮箱
+1 2 git config --global use.name &amp;#34;name&amp;#34; git config --global user.email &amp;#34;email@domain.com&amp;#34; 生成秘钥并将秘钥复制到github上
+1 2 3 4 5 6 7 8 # 生成秘钥，系统会提示key的保存位置（一般是~/.ssh目录下）和指定口令，如果不需要则保持默认，连续三次回车即可 ssh-keygen # 获取生成的秘钥信息 cat ~/.ssh id_rsa.pub # 将秘钥复制到github # 获取到秘钥信息后将内容粘贴到github账号管理的添加SSH KEY界面中即可 版本信息 ^方式表示
+1 2 3 4 5 6 7 HEAD 表示当前commit HEAD^ 上一个版本commit HEAD^^ 上上个版本commit 以此类推 ~数字方式表示"><meta property="og:url" content="https://chenyidao.github.io/p/git%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/"><meta property="og:site_name" content="合山雷公马"><meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:tag" content="Git"><meta property="article:tag" content="工具"><meta property="article:published_time" content="2022-08-17T00:00:00+00:00"><meta property="article:modified_time" content="2022-08-17T00:00:00+00:00"><meta name=twitter:title content="【Git】常用操作"><meta name=twitter:description content="git概述 git 常用操作 git 配置 安装git 1 2 # 查看是否安装成功 git --version 查看当前配置信息 1 git config --global --list 配置git 设置用户名和邮箱
+1 2 git config --global use.name &amp;#34;name&amp;#34; git config --global user.email &amp;#34;email@domain.com&amp;#34; 生成秘钥并将秘钥复制到github上
+1 2 3 4 5 6 7 8 # 生成秘钥，系统会提示key的保存位置（一般是~/.ssh目录下）和指定口令，如果不需要则保持默认，连续三次回车即可 ssh-keygen # 获取生成的秘钥信息 cat ~/.ssh id_rsa.pub # 将秘钥复制到github # 获取到秘钥信息后将内容粘贴到github账号管理的添加SSH KEY界面中即可 版本信息 ^方式表示
+1 2 3 4 5 6 7 HEAD 表示当前commit HEAD^ 上一个版本commit HEAD^^ 上上个版本commit 以此类推 ~数字方式表示"><link rel="shortcut icon" href=favicon.ico><style>:root{--article-font-family:"Noto Serif SC", var(--base-font-family)}</style><script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label=切换菜单>
+<span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/><img src=/img/avatar_hubb583a3afed012102328e5b01d518d48_47666_300x0_resize_box_3.png width=300 height=424 class=site-logo loading=lazy alt=Avatar></a>
+<span class=emoji>🍥</span></figure><div class=site-meta><h1 class=site-name><a href=/>合山雷公马</a></h1><h2 class=site-description>骑上我的雷公马，砍柴学习两不误.</h2></div></header><ol class=social-menu><li><a href=https://github.com/chenyidao/chenyidao.github.io target=_blank title=GitHub><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg><span>主页</span></a></li><li><a href=/%E5%85%B3%E4%BA%8E/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg><span>关于</span></a></li><li><a href=/archives/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg><span>博客</span></a></li><li><a href=/search/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg><span>搜索</span></a></li><li><a href=/%E5%B8%B8%E7%94%A8%E9%93%BE%E6%8E%A5/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg><span>链接</span></a></li><div class=menu-bottom-section><li id=dark-mode-toggle><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><span>暗色模式</span></li></div></ol></aside><main class="main full-width"><article class=main-article><header class=article-header><div class=article-details><header class=article-category><a href=/categories/technology/ style=background-color:#2a9d8f;color:#fff>技术</a></header><div class=article-title-wrapper><h2 class=article-title><a href=/p/git%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/>【Git】常用操作</a></h2></div><footer class=article-time><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg><time class=article-time--published>2022-17-08</time></div><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><time class=article-time--reading>阅读时长: 3 分钟</time></div></footer></div></header><section class=article-content><h2 id=git概述>git概述</h2><h2 id=git-常用操作>git 常用操作</h2><h3 id=git-配置>git 配置</h3><h4 id=安装git>安装git</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=c1># 查看是否安装成功</span>
+</span></span><span class=line><span class=cl>git --version
+</span></span></code></pre></td></tr></table></div></div><h4 id=查看当前配置信息>查看当前配置信息</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>git config --global --list
+</span></span></code></pre></td></tr></table></div></div><h4 id=配置git>配置git</h4><ol><li><p>设置用户名和邮箱</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>git config --global use.name <span class=s2>&#34;name&#34;</span>
+</span></span><span class=line><span class=cl>git config --global user.email <span class=s2>&#34;email@domain.com&#34;</span>
+</span></span></code></pre></td></tr></table></div></div></li><li><p>生成秘钥并将秘钥复制到github上</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=c1># 生成秘钥，系统会提示key的保存位置（一般是~/.ssh目录下）和指定口令，如果不需要则保持默认，连续三次回车即可</span>
+</span></span><span class=line><span class=cl>ssh-keygen
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 获取生成的秘钥信息</span>
+</span></span><span class=line><span class=cl>cat ~/.ssh id_rsa.pub
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 将秘钥复制到github</span>
+</span></span><span class=line><span class=cl><span class=c1># 获取到秘钥信息后将内容粘贴到github账号管理的添加SSH KEY界面中即可</span>
+</span></span></code></pre></td></tr></table></div></div></li></ol><h3 id=版本信息>版本信息</h3><p>^方式表示</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>HEAD 表示当前commit
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>HEAD^ 上一个版本commit
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>HEAD^^ 上上个版本commit
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>以此类推
+</span></span></code></pre></td></tr></table></div></div><p>~数字方式表示</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>HEAD~0 当前版本
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>HEAD~1 上一个版本
+</span></span></code></pre></td></tr></table></div></div><h3 id=回退>回退</h3><h4 id=回退未使用git-add-缓存的代码>回退未使用git add 缓存的代码</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=c1># 放弃某文件的修改</span>
+</span></span><span class=line><span class=cl>git checkout filename
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 放弃所有文件的修改</span>
+</span></span><span class=line><span class=cl>git checkout .
+</span></span></code></pre></td></tr></table></div></div><p>说明：</p><ul><li>此命令用来放弃掉所有还没有加入到缓冲区（就是git add 命令）的修改：内容修改与整个文件删除。</li><li>此命令不会删除新建的文件，因为新建的文件还没加入git管理系统中，所以对git来说是未知，只需手动删除即可。</li></ul><h4 id=回退已使用-git-add缓存但未使用git-commit-提交的代码>回退已使用 git add缓存，但未使用git commit 提交的代码</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=c1># 放弃某文件</span>
+</span></span><span class=line><span class=cl>git reset HAED filename
+</span></span><span class=line><span class=cl><span class=c1># 放弃所有文件</span>
+</span></span><span class=line><span class=cl>git reset HEAD
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 放弃所有，保存工作目录，并清空暂存区</span>
+</span></span><span class=line><span class=cl>git reset HEAD~1
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 保留工作目录，并把重置HEAD所带来的新的差异放进暂存区，相当于回退到了 git add 的状态</span>
+</span></span><span class=line><span class=cl>git reset --soft HEAD~1
+</span></span></code></pre></td></tr></table></div></div><p>说明：</p><ul><li>reset 不加参数（mixed）：保留工作目录，并清空暂存区</li><li>reset &ndash;soft 回退到 add 状态</li></ul><h4 id=回退已经git-commit提交之后的代码>回退已经git commit提交之后的代码</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=c1># 回退到上一次commit的状态</span>
+</span></span><span class=line><span class=cl>git reset --hard HEAD^ 或者 git reset --HARD HEAD~1
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 回退到某个commit</span>
+</span></span><span class=line><span class=cl>git reset --hard HEAD^  <span class=c1>#上个版本</span>
+</span></span><span class=line><span class=cl>git reset --hard HEAD~3  <span class=c1>#回退到前3次commit之前</span>
+</span></span><span class=line><span class=cl>git reset --hard commit_id <span class=c1>#回退/进到 指定commit的位置</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=分支操作>分支操作</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=c1># 切换分支</span>
+</span></span><span class=line><span class=cl>git checkout 分支名
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 删除本地分支</span>
+</span></span><span class=line><span class=cl>git branch -D 分支名称
+</span></span></code></pre></td></tr></table></div></div><p>分支重命名</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=c1># 分支重命名</span>
+</span></span><span class=line><span class=cl>git branch -m 旧分支名 新分支名
+</span></span><span class=line><span class=cl><span class=c1># 删除远程旧分支</span>
+</span></span><span class=line><span class=cl>git push --delete origin 分支名
+</span></span><span class=line><span class=cl><span class=c1># 将新分支推到远程</span>
+</span></span><span class=line><span class=cl>git push origin 新分支名
+</span></span><span class=line><span class=cl><span class=c1># 将当前分支跟踪到远程分支</span>
+</span></span><span class=line><span class=cl>git branch --set-upstream-to origin/远程分支
+</span></span></code></pre></td></tr></table></div></div><h3 id=修改-commit>修改 commit</h3><h4 id=修改message>修改message</h4><p><strong>修改当前commit的message</strong></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=c1># 修改当前commit的message</span>
+</span></span><span class=line><span class=cl>git commit --amend
+</span></span><span class=line><span class=cl><span class=c1># 修改内容</span>
+</span></span><span class=line><span class=cl><span class=c1># push到远端</span>
+</span></span><span class=line><span class=cl>git push -f
+</span></span></code></pre></td></tr></table></div></div><p><strong>修改历史message</strong></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=c1># 比如修改当前2个commit，HEAD~2，将要修改的那一行的pick改为edit</span>
+</span></span><span class=line><span class=cl>git rebase -i HEAD~2
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 修改commit内容</span>
+</span></span><span class=line><span class=cl>git commit --amend
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 保存commit 内容</span>
+</span></span><span class=line><span class=cl>git rebase --continue
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 强推到远端</span>
+</span></span><span class=line><span class=cl>git push -f
+</span></span></code></pre></td></tr></table></div></div><h3 id=fork到别人的仓库后怎么更新>Fork到别人的仓库后怎么更新</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=c1># 1、添加fork源仓库地址（upstream名称可自定义）</span>
+</span></span><span class=line><span class=cl>git remote add upstreame 远程仓库地址
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 2、查看是否添加成功（此时本地仓应该对应了两个远程仓，一个是自己fork出来的origin，一个是刚刚add的upsteam源）</span>
+</span></span><span class=line><span class=cl>git remote -v
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 3、拉取远程源仓库</span>
+</span></span><span class=line><span class=cl>git fetch upstream
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 4、切换到本地master分支</span>
+</span></span><span class=line><span class=cl>git checkout master
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 5、将远程源master分支的变化合并到本地master分支</span>
+</span></span><span class=line><span class=cl>git merge upstream/master
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 6、将本地更改提交到fork出来的仓库</span>
+</span></span><span class=line><span class=cl>git push origin master
+</span></span></code></pre></td></tr></table></div></div><h3 id=不小心在master分支修改了代码并push到远端之后如何进行恢复>不小心在master分支修改了代码并push到远端之后如何进行恢复</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=c1># 1、回退本地master分支代码</span>
+</span></span><span class=line><span class=cl>git log <span class=c1># 查看commit</span>
+</span></span><span class=line><span class=cl>git reset --hard commit_id <span class=c1># commit_id选取master分支没乱之前的commit</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 2、强制回退</span>
+</span></span><span class=line><span class=cl>git push -f origin master
+</span></span></code></pre></td></tr></table></div></div><p>说明：</p><ul><li>在强制回退过程中，可能master分支处于被保护状态，需要先设置未unprotected状态，再进行操作</li></ul><h3 id=开发时提交了多次产生多个commit信息但在合入到主干分支时想只显示一个commit如何合并个人分支的多个commit信息>开发时提交了多次，产生多个commit信息，但在合入到主干分支时想只显示一个commit，如何合并个人分支的多个commit信息？</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=c1># 1、rebase前n个要合并的commit</span>
+</span></span><span class=line><span class=cl>git rebase -i HEAD~n
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 2、将需要合并的commit由pick状态改成fixup(合并且不保留当前commit信息)或squash(合并且保留当前commit信息)状态</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 3、查看是否生效</span>
+</span></span><span class=line><span class=cl>git log
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 4、（可选）如果合并有冲突，则需要解决冲突，并continue</span>
+</span></span><span class=line><span class=cl>git rebase --continue
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 5、（可选）如果过程中不想合并了，则abort</span>
+</span></span><span class=line><span class=cl>git rebase --abort
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 6、将合并后内容强制推到远程仓库</span>
+</span></span><span class=line><span class=cl>git push -f
+</span></span></code></pre></td></tr></table></div></div><p>说明：</p><p>git rebase -i HEAD~n之后</p><p><img src=/C:%5cUsers%5cAdministrator%5cAppData%5cRoaming%5cTypora%5ctypora-user-images%5cimage-20220817102512741.png loading=lazy alt=image-20220817102512741></p><h3 id=当前分支有修改主干分支有更新我想合并主干的更新并将当前修改作为最新的commit怎么办>当前分支有修改，主干分支有更新，我想合并主干的更新并将当前修改作为最新的commit怎么办？</h3><h4 id=merge-命令是否可行>merge 命令是否可行？</h4><p>如果进行merge 操作，会将主干分支更新的commit作为当前分支的最新commit进行合并，不可行。</p><h4 id=rebase-命令是否可行>rebase 命令是否可行？</h4><p>rebase 命令非常强大，可以当前诉求。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=c1># 1、本地分支 add和 commit当前修改</span>
+</span></span><span class=line><span class=cl>git add .
+</span></span><span class=line><span class=cl>git commit -m <span class=s2>&#34;current commit&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 2、拉取主干</span>
+</span></span><span class=line><span class=cl>git fetch origin
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 3、rebase主干</span>
+</span></span><span class=line><span class=cl>git rebase origin/master
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 4、手动解决冲突</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 5、保存结果</span>
+</span></span><span class=line><span class=cl>git rebase --continue
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 6、查看当前commit信息是否正确</span>
+</span></span><span class=line><span class=cl>git log
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 7、将结果推到远端</span>
+</span></span><span class=line><span class=cl>git push -f
+</span></span></code></pre></td></tr></table></div></div><h3 id=每一个项目都clone一次形成一个文件夹进行维护太麻烦了能不能只用一个项目文件夹来提交查看多个项目不同分支的代码>每一个项目都clone一次，形成一个文件夹进行维护太麻烦了，能不能只用一个项目文件夹来提交查看多个项目不同分支的代码？</h3><p>​ 一般来说，我们一个团队的开发流程是，建立一个基准仓，然后每个开发人员fork这个基准仓到个人仓，然后在个人仓上进行代码开发，然后再以 pull request的方式将修改合并到基准仓。</p><p>​ 在这个过程中，不同开发人员之间可能需要相互检视他人的代码，要访问某个仓库分支，必须先获取到仓库地址，这个时候可以将其他开发的仓库add为个人本地仓库的远程仓之一。</p><p>​ 一般同fork源的才建议这样处理。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=c1># 1、将其他开发人员个人仓作为远程仓方式添加到同一项目下</span>
+</span></span><span class=line><span class=cl><span class=c1># git remote add 仓库名称（可自定义） 仓库地址</span>
+</span></span><span class=line><span class=cl>git remote add devA ssh:xxx.git
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 2、拉取仓库内容（包括分支信息等）</span>
+</span></span><span class=line><span class=cl>git fetch devA
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 3、切换到对应分支</span>
+</span></span><span class=line><span class=cl>git checkout devA/branchA
+</span></span></code></pre></td></tr></table></div></div><h3 id=如何统计当前账号代码提交量>如何统计当前账号代码提交量</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>git log --since<span class=o>=</span><span class=s1>&#39;2022-01-01&#39;</span> --unti<span class=o>=</span><span class=s1>&#39;2022-03-30&#39;</span> --author<span class=o>=</span><span class=s2>&#34;liudehua&#34;</span> --pretty<span class=o>=</span>tformat:--numstat <span class=p>|</span> awk <span class=s1>&#39;{add += $1;subs += $2} END {prinf &#34;added lines:%s,removed lines:%s\n&#34;,add,subs}&#39;</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=fqa>FQA</h3><h4 id=如何同时在一台机器上配置git-访问github和gitee且用户名邮箱信息不一致>如何同时在一台机器上配置git 访问github和gitee，且用户名/邮箱信息不一致</h4><h4 id=clone时发生了504错误怎么解决>clone时发生了504错误怎么解决？</h4><p>分别试一下 git方式和http方式，如果还是失败则进行下列git配置</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>git config --global http.sslVerify <span class=nb>false</span>
+</span></span><span class=line><span class=cl>git config --global https.sslVerify <span class=nb>false</span>
+</span></span></code></pre></td></tr></table></div></div><h4 id=clone-时发生了403错误怎么解决>clone 时发生了403错误怎么解决？</h4><ul><li>设置用户名、密码</li><li>生成秘钥</li><li>获取到秘钥信息后将内容粘贴到github账号管理的添加SSH KEY界面中即可。</li></ul><h4 id=clone时发生错误>clone时发生错误</h4><p>Q：git clone <a class=link href=https://xxx.git target=_blank rel=noopener>https://xxx.git</a></p><p>A：https://blog.csdn.net/weixin_43301333/article/details/123159327</p><p>使用 git clone <a class=link href=mailto:git@xxx.git>git@xxx.git</a></p></section><footer class=article-footer><section class=article-tags><a href=/tags/git/>Git</a>
+<a href=/tags/%E5%B7%A5%E5%85%B7/>工具</a></section><section class=article-copyright><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg><span>heshan-leigongma</span></section></footer></article><aside class=related-content--wrapper><h2 class=section-title>相关文章</h2><div class=related-content><div class="flex article-list--tile"><article><a href=/p/linux-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/><div class=article-details><h2 class=article-title>linux 常用操作</h2></div></a></article><article><a href=/p/linux-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/><div class=article-details><h2 class=article-title>linux 常用操作</h2></div></a></article><article><a href=/p/jetbrainsjetbrains%E7%B3%BB%E5%88%97%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/><div class=article-details><h2 class=article-title>【Jetbrains】Jetbrains系列开发工具</h2></div></a></article><article><a href=/p/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%B8%B8%E7%94%A8%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/><div class=article-details><h2 class=article-title>【开发工具】常用开发工具</h2></div></a></article><article><a href=/p/%E8%BD%AF%E4%BB%B6%E6%BF%80%E6%B4%BB/><div class=article-details><h2 class=article-title>软件激活</h2></div></a></article></div></div></aside><div class=disqus-container><div id=disqus_thread></div><script type=application/javascript>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("disqus_thread").innerHTML="Disqus comments not available by default when the website is previewed locally.";return}var t=document,e=t.createElement("script");e.async=!0,e.src="//hugo-theme-stack.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div><style>.disqus-container{background-color:var(--card-background);border-radius:var(--card-border-radius);box-shadow:var(--shadow-l1);padding:var(--card-padding)}</style><script>window.addEventListener("onColorSchemeChange",e=>{typeof DISQUS=="object"&&DISQUS.reset({reload:!0})})</script><footer class=site-footer><section class=copyright>&copy;
+2020 -
+2022 合山雷公马</section><section class=powerby>Built with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a><br>主题 <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.13.0>Stack</a></b> 由 <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a> 设计</section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css crossorigin=anonymous></main><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">目录</h2><div class=widget--toc><nav id=TableOfContents><ol><li><a href=#git概述>git概述</a></li><li><a href=#git-常用操作>git 常用操作</a><ol><li><a href=#git-配置>git 配置</a><ol><li><a href=#安装git>安装git</a></li><li><a href=#查看当前配置信息>查看当前配置信息</a></li><li><a href=#配置git>配置git</a></li></ol></li><li><a href=#版本信息>版本信息</a></li><li><a href=#回退>回退</a><ol><li><a href=#回退未使用git-add-缓存的代码>回退未使用git add 缓存的代码</a></li><li><a href=#回退已使用-git-add缓存但未使用git-commit-提交的代码>回退已使用 git add缓存，但未使用git commit 提交的代码</a></li><li><a href=#回退已经git-commit提交之后的代码>回退已经git commit提交之后的代码</a></li></ol></li><li><a href=#分支操作>分支操作</a></li><li><a href=#修改-commit>修改 commit</a><ol><li><a href=#修改message>修改message</a></li></ol></li><li><a href=#fork到别人的仓库后怎么更新>Fork到别人的仓库后怎么更新</a></li><li><a href=#不小心在master分支修改了代码并push到远端之后如何进行恢复>不小心在master分支修改了代码并push到远端之后如何进行恢复</a></li><li><a href=#开发时提交了多次产生多个commit信息但在合入到主干分支时想只显示一个commit如何合并个人分支的多个commit信息>开发时提交了多次，产生多个commit信息，但在合入到主干分支时想只显示一个commit，如何合并个人分支的多个commit信息？</a></li><li><a href=#当前分支有修改主干分支有更新我想合并主干的更新并将当前修改作为最新的commit怎么办>当前分支有修改，主干分支有更新，我想合并主干的更新并将当前修改作为最新的commit怎么办？</a><ol><li><a href=#merge-命令是否可行>merge 命令是否可行？</a></li><li><a href=#rebase-命令是否可行>rebase 命令是否可行？</a></li></ol></li><li><a href=#每一个项目都clone一次形成一个文件夹进行维护太麻烦了能不能只用一个项目文件夹来提交查看多个项目不同分支的代码>每一个项目都clone一次，形成一个文件夹进行维护太麻烦了，能不能只用一个项目文件夹来提交查看多个项目不同分支的代码？</a></li><li><a href=#如何统计当前账号代码提交量>如何统计当前账号代码提交量</a></li><li><a href=#fqa>FQA</a><ol><li><a href=#如何同时在一台机器上配置git-访问github和gitee且用户名邮箱信息不一致>如何同时在一台机器上配置git 访问github和gitee，且用户名/邮箱信息不一致</a></li><li><a href=#clone时发生了504错误怎么解决>clone时发生了504错误怎么解决？</a></li><li><a href=#clone-时发生了403错误怎么解决>clone 时发生了403错误怎么解决？</a></li><li><a href=#clone时发生错误>clone时发生错误</a></li></ol></li></ol></li></ol></nav></div></section></aside></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z+KMkF24hUW8WePSA9HM=" crossorigin=anonymous></script><script type=text/javascript src=/ts/main.js defer></script>
+<script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script></body></html>

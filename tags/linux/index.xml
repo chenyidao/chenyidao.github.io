@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>linux on 合山雷公马</title><link>https://chenyidao.github.io/tags/linux/</link><description>Recent content in linux on 合山雷公马</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 17 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://chenyidao.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>linux 常用操作</title><link>https://chenyidao.github.io/p/linux-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/linux-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid><description>&lt;h1 id="linux-常用操作">linux 常用操作&lt;/h1>
-&lt;h2 id="ubuntu-图形化桌面搭建">ubuntu 图形化桌面搭建&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>linux on 合山雷公马</title><link>https://chenyidao.github.io/tags/linux/</link><description>Recent content in linux on 合山雷公马</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 17 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://chenyidao.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>linux 常用操作</title><link>https://chenyidao.github.io/p/linux-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/linux-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid><description>&lt;h2 id="ubuntu-图形化桌面搭建">ubuntu 图形化桌面搭建&lt;/h2>
 &lt;h3 id="搭建">搭建&lt;/h3>
 &lt;p>参考：https://help.aliyun.com/document_detail/59330.html&lt;/p>
 &lt;h3 id="fqa">FQA&lt;/h3>
@@ -95,4 +94,25 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">autocutsel -f
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item></channel></rss>
+&lt;/div>&lt;h2 id="openeuler-安装远程桌面登录-vnc和gnome的安装">OpenEuler 安装远程桌面登录 VNC和GNOME的安装&lt;/h2>
+&lt;p>参考：https://blog.csdn.net/huangsxint/article/details/115025519&lt;/p>
+&lt;p>vnc：root/Huawei@123&lt;/p></description></item><item><title>linux 常用操作</title><link>https://chenyidao.github.io/p/linux-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/linux-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid><description>&lt;h2 id="linux-动态库搜索方式">linux 动态库搜索方式&lt;/h2>
+&lt;h2 id="软连接">软连接&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 在/opt/lib/下建立一个软连接 ss.so 引向 /usr/local/lib/ss.so&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ln -s /usr/local/lib/ss.so /opt/lib/ss.so
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="ccache安装">ccache安装&lt;/h2>
+&lt;p>为了加快 c++ 代码编译&lt;/p>
+&lt;p>参考：https://blog.csdn.net/w13635739860/article/details/99288899&lt;/p>
+&lt;h2 id="linux-软件安装方式">linux 软件安装方式&lt;/h2>
+&lt;ul>
+&lt;li>在线安装，比如apt install，yum install等方式&lt;/li>
+&lt;li>离线安装，下载二进制软件包，一般是压缩包，解压安装&lt;/li>
+&lt;/ul></description></item></channel></rss>

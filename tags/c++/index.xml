@@ -1,4 +1,186 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C++ on 合山雷公马</title><link>https://chenyidao.github.io/tags/c++/</link><description>Recent content in C++ on 合山雷公马</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 17 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://chenyidao.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml"/><item><title>调试</title><link>https://chenyidao.github.io/p/%E8%B0%83%E8%AF%95/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/%E8%B0%83%E8%AF%95/</guid><description>&lt;h2 id="代码调试概述">代码调试概述&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C++ on 合山雷公马</title><link>https://chenyidao.github.io/tags/c++/</link><description>Recent content in C++ on 合山雷公马</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 18 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://chenyidao.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml"/><item><title>【C++】C++ 学习笔记</title><link>https://chenyidao.github.io/p/c-c-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link><pubDate>Thu, 18 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/c-c-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid><description>&lt;p>&lt;strong>auto&lt;/strong>&lt;/p>
+&lt;p>c++ 11支持，自动类型推断&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-c++" data-lang="c++">&lt;span class="line">&lt;span class="cl">&lt;span class="k">auto&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">10&lt;/span> &lt;span class="c1">// 等价于scala中 val i = 10
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>static_cast&lt;/strong>&lt;/p>
+&lt;p>强制隐式转换&lt;/p>
+&lt;p>&lt;strong>std:setw(n)&lt;/strong>&lt;/p>
+&lt;p>设置输出宽度为n，默认为右对齐并用空格补充&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-c++" data-lang="c++">&lt;span class="line">&lt;span class="cl">&lt;span class="n">count&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="s">&amp;#34;0&amp;#34;&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="nl">std&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">setw&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">5&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="s">&amp;#34;1&amp;#34;&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="n">endl&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//输出：0 1
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>nullptr&lt;/strong>&lt;/p>
+&lt;p>c++11支持，初始化空指针&lt;/p>
+&lt;p>&lt;strong>std::move&lt;/strong>&lt;/p>
+&lt;p>c++11支持，优点：提高性能&lt;/p>
+&lt;p>&lt;code>std::move&lt;/code> 是将对象的状态或者所有权从一个对象转移到另一个对象，只是转移，没有内存的搬迁或者内存拷贝。&lt;/p>
+&lt;p>如 &lt;code>string&lt;/code> 类在赋值或者拷贝构造函数中会声明 &lt;code>char*&lt;/code> 数组来存放数据，然后原 &lt;code>string&lt;/code> 中的 &lt;code>char*&lt;/code> 数组被析构函数释放，如果 &lt;code>s&lt;/code> 是一个临时变量，则上面的拷贝和析构就是多余的，完全可以把临时变量 &lt;code>s&lt;/code> 中的数据直接 “转移” 到新的变量下面。&lt;/p>
+&lt;p>&lt;code>str&lt;/code> 对象的构造函数在 C++11 之前调用的是传统的 Copy Ctor，而在 C++11 中会优先调用 Move Ctor。&lt;/p>
+&lt;p>move 是和 copy 相对的：&lt;/p>
+&lt;ul>
+&lt;li>copy 就是照着别人的东西复制一份，所需的工作量随拷贝对象的不同而不同，比如拷贝一个字很快，拷贝一本书很慢。&lt;/li>
+&lt;li>move 就是把别人书上的名字擦掉，写上自己的。因为 move 不需要复制，所以很快。其实就是把自己的指针指过去，把原属主的指针指向别处。&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>std::make_shared&lt;/strong>&lt;/p>
+&lt;p>c++11支持，优点：提高性能&lt;/p>
+&lt;p>&lt;strong>头文件和源文件&lt;/strong>&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.runoob.com/w3cnote/cpp-header.html" target="_blank" rel="noopener"
+>https://www.runoob.com/w3cnote/cpp-header.html&lt;/a>&lt;/p>
+&lt;p>简单来说就是，c++是编译型语言，在使用某个函数前，必须将它声明在当前使用位置的前面，不然编译不通过。&lt;/p>
+&lt;p>为了简洁性和复用性，.h头文件中声明了.cpp文件中所有的方法，.cpp中对具体方法做定义和实现；&lt;/p>
+&lt;p>其他文件要用.cpp中方法时，为了保证通过编译，先引入.h（函数声明），在调用的时候再链接到定义的地方调用即可。&lt;/p>
+&lt;p>头文件本省不参与编译，但被其他.cpp文件引用时在多个.cpp文件中得到编译&lt;/p>
+&lt;p>&lt;strong>#include&lt;/strong>&lt;/p>
+&lt;p>作用是将其后面所写的那个文件的内容，完完整整地、一字不改地包含到当前的文件夹中。&lt;/p>
+&lt;p>&lt;strong>extern&lt;/strong>&lt;/p>
+&lt;p>修饰符extern用在变量或者函数的声明前，用来说明“此变量/函数是在别处定义的，要在此处引用”。&lt;/p>
+&lt;p>&lt;a class="link" href="https://zhuanlan.zhihu.com/p/267130913" target="_blank" rel="noopener"
+>https://zhuanlan.zhihu.com/p/267130913&lt;/a>&lt;/p>
+&lt;p>&lt;strong>#ifdef&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>条件编译&lt;/strong>。有时，希望当满足某条件时对一组语句进行编译，而当条件不满足时则编译另一组语句。在头文件中使用#ifdef和＃ifndef是非常重要的，可以防止&lt;strong>双重定义&lt;/strong>的错误&lt;/p>
+&lt;p>&lt;strong>#define&lt;/strong>&lt;/p>
+&lt;p>宏定义，C语言中，可以用 #define 定义一个标识符来表示一个常量。其特点是：定义的标识符不占内存，只是一个临时的符号，预编译后这个符号就不存在了。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-c++" data-lang="c++">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#define M 5 &lt;/span>&lt;span class="c1">//无参宏
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="cp">#define COUNT(M) M * M &lt;/span>&lt;span class="c1">//有参宏
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">printf&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;COUNT = %d&lt;/span>&lt;span class="se">\n&lt;/span>&lt;span class="s">&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">COUNT&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">10&lt;/span>&lt;span class="p">));&lt;/span> &lt;span class="c1">// 替换为： COUNT(10) = 10 * 10，输出结果： COUNT = 100
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>#&lt;/strong>&lt;/p>
+&lt;p>凡是以“#”开头的均为预处理指令。&lt;/p>
+&lt;p>&lt;strong>operator&lt;/strong>&lt;/p>
+&lt;p>运算符重载&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-c++" data-lang="c++">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#include&lt;/span> &lt;span class="cpf">&amp;lt;iostream&amp;gt;&lt;/span>&lt;span class="cp">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="k">using&lt;/span> &lt;span class="k">namespace&lt;/span> &lt;span class="n">std&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">person&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">private&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">int&lt;/span> &lt;span class="n">age&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">public&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">person&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">nAge&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="n">age&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">nAge&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">bool&lt;/span> &lt;span class="k">operator&lt;/span>&lt;span class="o">==&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">const&lt;/span> &lt;span class="n">person&lt;/span>&lt;span class="o">&amp;amp;&lt;/span> &lt;span class="n">ps&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="k">this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="n">age&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">ps&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">age&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="nb">true&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="nb">false&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">};&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">person&lt;/span> &lt;span class="n">p1&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">10&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">person&lt;/span> &lt;span class="n">p2&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">10&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">p1&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">p2&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1">// 这里可以直接 == 调用重载方法
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cout&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="s">&amp;#34;p1 is equal with p2.&amp;#34;&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="n">endl&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cout&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="s">&amp;#34;p1 is not equal with p2.&amp;#34;&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="n">endl&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>std::string&lt;/strong>&lt;/p>
+&lt;p>&lt;a class="link" href="https://blog.csdn.net/zy2317878/article/details/79056289" target="_blank" rel="noopener"
+>https://blog.csdn.net/zy2317878/article/details/79056289&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-c++" data-lang="c++">&lt;span class="line">&lt;span class="cl">&lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">string&lt;/span> &lt;span class="n">s1&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">//构造一个默认为空的string
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">string&lt;/span> &lt;span class="n">s2&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">s0&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="c1">//通过复制一个string构造一个新的string
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">string&lt;/span> &lt;span class="n">s3&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">s0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">8&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="c1">//通过复制一个string的一部分来构造一个新的string。8为起始位置，3为偏移量。
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">string&lt;/span> &lt;span class="n">s4&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;A character sequence&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="c1">//与s0构造方式相同。
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">string&lt;/span> &lt;span class="n">s5&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;Another character sequence&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">12&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="c1">//已知字符串，通过截取指定长度12来创建一个string
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">string&lt;/span> &lt;span class="n">s6a&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">10&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="sc">&amp;#39;x&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="c1">//指定string长度，与一个元素，则默认重复该元素创建string
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">string&lt;/span> &lt;span class="n">s6b&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">10&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">42&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="c1">// 42 is the ASCII code for &amp;#39;*&amp;#39; //通过ASCII码来代替s6a中的指定元素。
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">string&lt;/span> &lt;span class="n">s7&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">s0&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">begin&lt;/span>&lt;span class="p">(),&lt;/span> &lt;span class="n">s0&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">begin&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">7&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="c1">//通过迭代器来指定复制s0的一部分，来创建s7
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>调试</title><link>https://chenyidao.github.io/p/%E8%B0%83%E8%AF%95/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/%E8%B0%83%E8%AF%95/</guid><description>&lt;h2 id="代码调试概述">代码调试概述&lt;/h2>
 &lt;h3 id="前言">前言&lt;/h3>
 &lt;p>​ 有时候我们写出来的代码与预期处理结果不符，或者可能潜在一些bug，需要我们去修复；那么如何复现并快速定位到问题成为了关键，由于篇幅有限，本篇主要讨论问题复现（即debug），问题定位下一次再相互学习和讨论。&lt;/p>
 &lt;p>​ 一般而言，我们开发流程是，在本地Window系统上开发完代码，然后将代码放在linux机器上跑。假如这时候我们要通过一个UT在本地调测一下我们写的函数表现是否符合预期。这个时候远程调试就发挥作用了。&lt;/p>
