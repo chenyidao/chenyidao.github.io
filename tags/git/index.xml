@@ -32,8 +32,8 @@
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">git config --global use.name &lt;span class="s2">&amp;#34;name&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global user.email &lt;span class="s2">&amp;#34;email@domain.com&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global user.email &lt;span class="s2">&amp;#34;email@domain.com
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;/li>
 &lt;li>
@@ -458,28 +458,396 @@ alt="image-20220817102512741"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">git log --since&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;2022-01-01&amp;#39;&lt;/span> --unti&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;2022-03-30&amp;#39;&lt;/span> --author&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;liudehua&amp;#34;&lt;/span> --pretty&lt;span class="o">=&lt;/span>tformat:--numstat &lt;span class="p">|&lt;/span> awk &lt;span class="s1">&amp;#39;{add += $1;subs += $2} END {prinf &amp;#34;added lines:%s,removed lines:%s\n&amp;#34;,add,subs}&amp;#39;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="fqa">FQA&lt;/h3>
-&lt;h4 id="如何同时在一台机器上配置git-访问github和gitee且用户名邮箱信息不一致">如何同时在一台机器上配置git 访问github和gitee，且用户名/邮箱信息不一致&lt;/h4>
-&lt;h4 id="clone时发生了504错误怎么解决">clone时发生了504错误怎么解决？&lt;/h4>
-&lt;p>分别试一下 git方式和http方式，如果还是失败则进行下列git配置&lt;/p>
+&lt;/div>&lt;h3 id="36-引用">3.6 引用&lt;/h3>
+&lt;p>引用的格式是在符号 &lt;code>&amp;gt;&lt;/code> 后面书写文字，文字的内容可以包含标题、链接、图片、粗体和斜体等。&lt;/p>
+&lt;p>一级引用如下：&lt;/p>
+&lt;blockquote>
+&lt;h3 id="一级引用示例">一级引用示例&lt;/h3>
+&lt;p>读一本好书，就是在和高尚的人谈话。 &lt;strong>——歌德&lt;/strong>&lt;/p>
+&lt;p>&lt;a class="link" href="https://mp.weixin.qq.com/s/lM808MxUu6tp8zU8SBu3sg" target="_blank" rel="noopener"
+>Markdown Nice最全功能介绍&lt;/a>&lt;/p>
+&lt;p>&lt;img src="https://files.mdnice.com/pic/cd3ca20c-896f-4cfc-9bdd-c4c58e69ba26.jpg"
+loading="lazy"
+alt="这里写图片描述"
+>&lt;/p>
+&lt;/blockquote>
+&lt;p>当使用多个 &lt;code>&amp;gt;&lt;/code> 符号时，就会变成多级引用&lt;/p>
+&lt;p>二级引用如下：&lt;/p>
+&lt;blockquote>
+&lt;blockquote>
+&lt;h3 id="二级引用示例">二级引用示例&lt;/h3>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>读一本好书，就是在和高尚的人谈话。 &lt;strong>——歌德&lt;/strong>&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://mp.weixin.qq.com/s/lM808MxUu6tp8zU8SBu3sg" target="_blank" rel="noopener"
+>Markdown Nice最全功能介绍&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;img src="https://files.mdnice.com/pic/cd3ca20c-896f-4cfc-9bdd-c4c58e69ba26.jpg"
+loading="lazy"
+alt="这里写图片描述"
+>&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;p>三级引用如下：&lt;/p>
+&lt;blockquote>
+&lt;blockquote>
+&lt;blockquote>
+&lt;h3 id="三级引用示例">三级引用示例&lt;/h3>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;blockquote>
+&lt;p>读一本好书，就是在和高尚的人谈话。 &lt;strong>——歌德&lt;/strong>&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://mp.weixin.qq.com/s/lM808MxUu6tp8zU8SBu3sg" target="_blank" rel="noopener"
+>Markdown Nice最全功能介绍&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;blockquote>
+&lt;p>&lt;img src="https://files.mdnice.com/pic/cd3ca20c-896f-4cfc-9bdd-c4c58e69ba26.jpg"
+loading="lazy"
+alt="这里写图片描述"
+>&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;h3 id="37-分割线">3.7 分割线&lt;/h3>
+&lt;p>可以在一行中用三个以上的减号来建立一个分隔线，同时需要在分隔线的上面空一行。如下：&lt;/p>
+&lt;hr>
+&lt;h3 id="38-删除线">3.8 删除线&lt;/h3>
+&lt;p>删除线的使用，在需要删除的文字前后各使用两个&lt;code>~&lt;/code>，如下：&lt;/p>
+&lt;p>&lt;del>这是要被删除的内容。&lt;/del>&lt;/p>
+&lt;h3 id="39-表格">3.9 表格&lt;/h3>
+&lt;p>可以使用冒号来定义表格的对齐方式，如下：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:left">姓名&lt;/th>
+&lt;th style="text-align:center">年龄&lt;/th>
+&lt;th style="text-align:right">工作&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:left">小可爱&lt;/td>
+&lt;td style="text-align:center">18&lt;/td>
+&lt;td style="text-align:right">吃可爱多&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">小小勇敢&lt;/td>
+&lt;td style="text-align:center">20&lt;/td>
+&lt;td style="text-align:right">爬棵勇敢树&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">小小小机智&lt;/td>
+&lt;td style="text-align:center">22&lt;/td>
+&lt;td style="text-align:right">看一本机智书&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>宽度过长的表格可以滚动，可在自定义主题中调节宽度：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:left">姓名&lt;/th>
+&lt;th style="text-align:center">年龄&lt;/th>
+&lt;th style="text-align:right">工作&lt;/th>
+&lt;th style="text-align:center">邮箱&lt;/th>
+&lt;th style="text-align:center">手机&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:left">小可爱&lt;/td>
+&lt;td style="text-align:center">18&lt;/td>
+&lt;td style="text-align:right">吃可爱多&lt;/td>
+&lt;td style="text-align:center">&lt;a class="link" href="mailto:lovely@test.com" >lovely@test.com&lt;/a>&lt;/td>
+&lt;td style="text-align:center">18812345678&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">小小勇敢&lt;/td>
+&lt;td style="text-align:center">20&lt;/td>
+&lt;td style="text-align:right">爬棵勇敢树&lt;/td>
+&lt;td style="text-align:center">&lt;a class="link" href="mailto:brave@test.com" >brave@test.com&lt;/a>&lt;/td>
+&lt;td style="text-align:center">17712345678&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">小小小机智&lt;/td>
+&lt;td style="text-align:center">22&lt;/td>
+&lt;td style="text-align:right">看一本机智书&lt;/td>
+&lt;td style="text-align:center">&lt;a class="link" href="mailto:smart@test.com" >smart@test.com&lt;/a>&lt;/td>
+&lt;td style="text-align:center">16612345678&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="310-图片">3.10 图片&lt;/h3>
+&lt;p>插入图片，如果是行内图片则无图例，否则有图例，格式如下：&lt;/p>
+&lt;p>&lt;img src="https://files.mdnice.com/pic/cd3ca20c-896f-4cfc-9bdd-c4c58e69ba26.jpg"
+loading="lazy"
+alt="这里写图片描述"
+>&lt;/p>
+&lt;p>可以通过在图片尾部添加宽度和高度控制图片大小，用法如下：&lt;/p>
+&lt;p>![同时设置宽度和高度](&lt;a class="link" href="https://files.mdnice.com/logo.png" target="_blank" rel="noopener"
+>https://files.mdnice.com/logo.png&lt;/a> =150x150)&lt;/p>
+&lt;p>![只设置宽度，推荐使用百分比](&lt;a class="link" href="https://files.mdnice.com/logo.png" target="_blank" rel="noopener"
+>https://files.mdnice.com/logo.png&lt;/a> =40%x)&lt;/p>
+&lt;p>该语法比较特殊，其他 Markdown 编辑器不完全通用。&lt;/p>
+&lt;p>支持 jpg、png、gif、svg 等图片格式，&lt;strong>其中 svg 文件仅可在微信公众平台中使用&lt;/strong>，svg 文件示例如下：&lt;/p>
+&lt;p>&lt;img src="https://files.mdnice.com/i-am-svg.svg"
+loading="lazy"
+>&lt;/p>
+&lt;ul>
+&lt;li>支持图片&lt;strong>拖拽和截图粘贴&lt;/strong>到编辑器中上传，上传时使用当前选择的图床。&lt;/li>
+&lt;li>可使用&lt;strong>格式-&amp;gt;图片&lt;/strong>上传本地图片，网站目前支持「图壳」图床，失败率低，但是只可保存一天用于排版&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>注：仅支持 https 的图片，图片粘贴到微信、知乎或掘金时会自动上传其服务器，不必担心使用上述图床会导致图片丢失&lt;/strong>。&lt;/p>
+&lt;p>图片还可以和链接嵌套使用，能够实现推荐卡片的效果，用法如下：&lt;/p>
+&lt;p>&lt;a class="link" href="https://mp.weixin.qq.com/s/lM808MxUu6tp8zU8SBu3sg" target="_blank" rel="noopener"
+>&lt;img src="https://files.mdnice.com/dance.gif"
+loading="lazy"
+alt="Markdown Nice 最全功能介绍"
+>&lt;/a>&lt;/p>
+&lt;h2 id="4-特殊语法">4. 特殊语法&lt;/h2>
+&lt;h3 id="41-脚注">4.1 脚注&lt;/h3>
+&lt;blockquote>
+&lt;p>支持平台：微信公众号、知乎。&lt;/p>
+&lt;/blockquote>
+&lt;p>脚注与链接的区别如下所示：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">git config --global http.sslVerify &lt;span class="nb">false&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global https.sslVerify &lt;span class="nb">false&lt;/span>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">链接：[文字](链接)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">脚注：[文字](脚注解释 &amp;#34;脚注名字&amp;#34;)
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h4 id="clone-时发生了403错误怎么解决">clone 时发生了403错误怎么解决？&lt;/h4>
+&lt;/div>&lt;p>有人认为在&lt;a class="link" href="https://en.wikipedia.org/wiki/Front-end_web_development" title="Front-end web development"
+target="_blank" rel="noopener"
+>大前端时代&lt;/a>的背景下，移动端开发（Android、IOS）将逐步退出历史舞台。&lt;/p>
+&lt;p>&lt;a class="link" href="%e6%98%af%e6%8c%87%e6%8e%8c%e6%8f%a1%e5%a4%9a%e7%a7%8d%e6%8a%80%e8%83%bd%ef%bc%8c%e5%b9%b6%e8%83%bd%e5%88%a9%e7%94%a8%e5%a4%9a%e7%a7%8d%e6%8a%80%e8%83%bd%e7%8b%ac%e7%ab%8b%e5%ae%8c%e6%88%90%e4%ba%a7%e5%93%81%e7%9a%84%e4%ba%ba%e3%80%82" title="什么是全栈工程师"
+>全栈工程师&lt;/a>在业务开发流程中起到了至关重要的作用。&lt;/p>
+&lt;p>脚注内容请拉到最下面观看。&lt;/p>
+&lt;h3 id="42-代码块">4.2 代码块&lt;/h3>
+&lt;blockquote>
+&lt;p>支持平台：微信公众号、知乎。&lt;/p>
+&lt;/blockquote>
+&lt;p>如果在一个行内需要引用代码，只要用反引号引起来就好，如下：&lt;/p>
+&lt;p>Use the &lt;code>printf()&lt;/code> function.&lt;/p>
+&lt;p>在需要高亮的代码块的前一行及后一行使用三个反引号，同时&lt;strong>第一行反引号后面表示代码块所使用的语言&lt;/strong>，如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// FileName: HelloWorld.java
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kd">public&lt;/span> &lt;span class="kd">class&lt;/span> &lt;span class="nc">HelloWorld&lt;/span> &lt;span class="o">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Java 入口程序，程序从此入口
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="kd">public&lt;/span> &lt;span class="kd">static&lt;/span> &lt;span class="kt">void&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="n">String&lt;/span>&lt;span class="o">[]&lt;/span> &lt;span class="n">args&lt;/span>&lt;span class="o">)&lt;/span> &lt;span class="o">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">System&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">out&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">println&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="s">&amp;#34;Hello,World!&amp;#34;&lt;/span>&lt;span class="o">);&lt;/span> &lt;span class="c1">// 向控制台打印一条语句
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>支持以下语言种类：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">bash
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">clojure，cpp，cs，css
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">dart，dockerfile, diff
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">erlang
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">go，gradle，groovy
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">haskell
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">java，javascript，json，julia
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">kotlin
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">lisp，lua
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">makefile，markdown，matlab
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">objectivec
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">perl，php，python
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">r，ruby，rust
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">scala，shell，sql，swift
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">tex，typescript
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">verilog，vhdl
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">xml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">yaml
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>如果想要更换代码主题，可在上方挑选，不支持代码主题自定义。&lt;/p>
+&lt;p>其中&lt;strong>微信代码主题与微信官方一致&lt;/strong>，有以下注意事项：&lt;/p>
 &lt;ul>
-&lt;li>设置用户名、密码&lt;/li>
-&lt;li>生成秘钥&lt;/li>
-&lt;li>获取到秘钥信息后将内容粘贴到github账号管理的添加SSH KEY界面中即可。&lt;/li>
+&lt;li>带行号且不换行，代码大小与官方一致&lt;/li>
+&lt;li>需要在代码块处标志语言，否则无法高亮&lt;/li>
+&lt;li>粘贴到公众号后，用鼠标点代码块内外一次，完成高亮&lt;/li>
 &lt;/ul>
-&lt;h4 id="clone时发生错误">clone时发生错误&lt;/h4>
-&lt;p>Q：git clone &lt;a class="link" href="https://xxx.git" target="_blank" rel="noopener"
->https://xxx.git&lt;/a>&lt;/p>
-&lt;p>A：https://blog.csdn.net/weixin_43301333/article/details/123159327&lt;/p>
-&lt;p>使用 git clone &lt;a class="link" href="mailto:git@xxx.git" >git@xxx.git&lt;/a>&lt;/p></description></item></channel></rss>
+&lt;p>diff 不能同时和其他语言的高亮同时显示，且需要调整代码主题为微信代码主题以外的代码主题才能看到 diff 效果，使用效果如下:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-diff" data-lang="diff">&lt;span class="line">&lt;span class="cl">&lt;span class="gi">+ 新增项
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gi">&lt;/span>&lt;span class="gd">- 删除项
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>其他主题不带行号，可自定义是否换行，代码大小与当前编辑器一致&lt;/strong>&lt;/p>
+&lt;h3 id="43-数学公式">4.3 数学公式&lt;/h3>
+&lt;blockquote>
+&lt;p>支持平台：微信公众号、知乎。&lt;/p>
+&lt;/blockquote>
+&lt;p>行内公式使用方法，比如这个化学公式：$\ce{Hg^2+ -&amp;gt;[I-] HgI2 -&amp;gt;[I-] [Hg^{II}I4]^2-}$&lt;/p>
+&lt;p>块公式使用方法如下：&lt;/p>
+&lt;p>$$H(D_2) = -\left(\frac{2}{4}\log_2 \frac{2}{4} + \frac{2}{4}\log_2 \frac{2}{4}\right) = 1$$&lt;/p>
+&lt;p>矩阵：&lt;/p>
+&lt;p>$$
+\begin{pmatrix}
+1 &amp;amp; a_1 &amp;amp; a_1^2 &amp;amp; \cdots &amp;amp; a_1^n \
+1 &amp;amp; a_2 &amp;amp; a_2^2 &amp;amp; \cdots &amp;amp; a_2^n \
+\vdots &amp;amp; \vdots &amp;amp; \vdots &amp;amp; \ddots &amp;amp; \vdots \
+1 &amp;amp; a_m &amp;amp; a_m^2 &amp;amp; \cdots &amp;amp; a_m^n \
+\end{pmatrix}
+$$&lt;/p>
+&lt;p>公式由于微信不支持，目前的解决方案是转成 svg 放到微信中，无需调整，矢量不失真。&lt;/p>
+&lt;p>目前测试如果公式量过大，在 Chrome 下会存在粘贴后无响应，但是在 Firefox 中始终能够成功。&lt;/p>
+&lt;h3 id="44-toc">4.4 TOC&lt;/h3>
+&lt;blockquote>
+&lt;p>支持平台：微信公众号、知乎。&lt;/p>
+&lt;/blockquote>
+&lt;p>TOC 全称为 Table of Content，列出全部标题。由于示例标题过多，需要使用将下方代码段去除即可。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">[TOC]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>由于微信只支持到二级列表，本工具仅支持二级标题和三级标题的显示。&lt;/p>
+&lt;h3 id="45-注音符号">4.5 注音符号&lt;/h3>
+&lt;blockquote>
+&lt;p>支持平台：微信公众号。&lt;/p>
+&lt;/blockquote>
+&lt;p>支持注音符号，用法如下：&lt;/p>
+&lt;p>Markdown Nice 这么好用，简直是{喜大普奔|hē hē hē hē}呀！&lt;/p>
+&lt;h3 id="46-横屏滑动幻灯片">4.6 横屏滑动幻灯片&lt;/h3>
+&lt;blockquote>
+&lt;p>支持平台：微信公众号。&lt;/p>
+&lt;/blockquote>
+&lt;p>通过&lt;code>&amp;lt;![](url),![](url)&amp;gt;&lt;/code>这种语法设置横屏滑动滑动片，具体用法如下：&lt;/p>
+&lt;p>&amp;lt;&lt;img src="https://files.mdnice.com/blue.jpg"
+loading="lazy"
+alt="蓝1"
+>,&lt;img src="https://files.mdnice.com/green.jpg"
+loading="lazy"
+alt="绿2"
+>,&lt;img src="https://files.mdnice.com/red.jpg"
+loading="lazy"
+alt="红3"
+>&amp;gt;&lt;/p>
+&lt;h3 id="47-容器块">4.7 容器块&lt;/h3>
+&lt;blockquote>
+&lt;p>支持平台：微信公众号。&lt;/p>
+&lt;/blockquote>
+&lt;p>通过&lt;code>::: block-1&lt;/code>开头，&lt;code>:::&lt;/code>结尾，来设置容器块，容器块内可以使用任意 markdown 语法，容器块内显示样式可自定义，不会被外部干扰&lt;/p>
+&lt;p>目前仅支持三种容器块，&lt;code>block-1&lt;/code>、&lt;code>block-2&lt;/code>和&lt;code>block-3&lt;/code>&lt;/p>
+&lt;p>::: block-1&lt;/p>
+&lt;h3 id="容器块-1-示例">容器块 1 示例&lt;/h3>
+&lt;blockquote>
+&lt;p>读一本好书，就是在和高尚的人谈话。 &lt;strong>——歌德&lt;/strong>
+:::&lt;/p>
+&lt;/blockquote>
+&lt;p>::: block-2&lt;/p>
+&lt;h3 id="容器块-2-示例">容器块 2 示例&lt;/h3>
+&lt;blockquote>
+&lt;p>读一本好书，就是在和高尚的人谈话。 &lt;strong>——歌德&lt;/strong>
+:::&lt;/p>
+&lt;/blockquote>
+&lt;p>::: block-3&lt;/p>
+&lt;h3 id="容器块-3-示例">容器块 3 示例&lt;/h3>
+&lt;blockquote>
+&lt;p>读一本好书，就是在和高尚的人谈话。 &lt;strong>——歌德&lt;/strong>
+:::&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="48-分列">4.8 分列&lt;/h3>
+&lt;blockquote>
+&lt;p>支持平台：微信公众号。&lt;/p>
+&lt;/blockquote>
+&lt;p>对于需要 2 列展示的内容，可以通过分列语法实现，可以设置左右比例，不设置时默认各为50%，示例如下：&lt;/p>
+&lt;p>:::: column
+::: column-left&lt;/p>
+&lt;p>&lt;strong>左边的内容&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://files.mdnice.com/blue.jpg"
+loading="lazy"
+alt="左边的图片"
+>&lt;/p>
+&lt;p>:::
+::: column-right&lt;/p>
+&lt;p>&lt;strong>右边的内容&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://files.mdnice.com/green.jpg"
+loading="lazy"
+alt="右边的图片"
+>&lt;/p>
+&lt;p>:::
+::::&lt;/p>
+&lt;p>设置百分比示例如下：&lt;/p>
+&lt;p>:::: column
+::: column-left 30%&lt;/p>
+&lt;p>&lt;strong>左边的内容&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://files.mdnice.com/blue.jpg"
+loading="lazy"
+alt="左边的图片"
+>&lt;/p>
+&lt;p>:::
+::: column-right 70%&lt;/p>
+&lt;p>&lt;strong>右边的内容&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://files.mdnice.com/green.jpg"
+loading="lazy"
+alt="右边的图片"
+>&lt;/p>
+&lt;p>:::
+::::&lt;/p>
+&lt;h2 id="5-其他语法">5 其他语法&lt;/h2>
+&lt;h3 id="51-html">5.1 HTML&lt;/h3>
+&lt;p>支持原生 HTML 语法，请写内联样式，如下：&lt;/p>
+&lt;p>&lt;!-- raw HTML omitted -->橙色居右&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->橙色居中&lt;!-- raw HTML omitted -->&lt;/p>
+&lt;h3 id="52-uml">5.2 UML&lt;/h3>
+&lt;p>不支持，推荐使用开源工具&lt;code>https://draw.io/&lt;/code>制作后再导入图片&lt;/p>
+&lt;h3 id="53-更多文档">5.3 更多文档&lt;/h3>
+&lt;p>更多文档请参考 &lt;a class="link" href="https://product.mdnice.com/articles/" title="更多文档"
+target="_blank" rel="noopener"
+>mdnice 产品主页&lt;/a>&lt;/p></description></item></channel></rss>
