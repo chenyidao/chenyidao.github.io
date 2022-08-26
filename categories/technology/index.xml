@@ -1375,7 +1375,124 @@ alt="图片名称"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">JAVA_HOME&lt;/span>&lt;span class="o">=&lt;/span>/home/jdk-1.8
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;hr></description></item><item><title>【开发工具】常用开发工具</title><link>https://chenyidao.github.io/p/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%B8%B8%E7%94%A8%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%B8%B8%E7%94%A8%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</guid><description>&lt;h1 id="常用开发工具">常用开发工具&lt;/h1>
+&lt;/div>&lt;hr></description></item><item><title>【Linux】Linux 常用操作</title><link>https://chenyidao.github.io/p/linuxlinux-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/linuxlinux-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid><description>&lt;h2 id="linux-动态库搜索方式">linux 动态库搜索方式&lt;/h2>
+&lt;h2 id="软连接">软连接&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 在/opt/lib/下建立一个软连接 ss.so 引向 /usr/local/lib/ss.so&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ln -s /usr/local/lib/ss.so /opt/lib/ss.so
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="ccache安装">ccache安装&lt;/h2>
+&lt;p>为了加快 c++ 代码编译&lt;/p>
+&lt;p>参考：https://blog.csdn.net/w13635739860/article/details/99288899&lt;/p>
+&lt;h2 id="linux-软件安装方式">linux 软件安装方式&lt;/h2>
+&lt;ul>
+&lt;li>在线安装，比如apt install，yum install等方式&lt;/li>
+&lt;li>离线安装，下载二进制软件包，一般是压缩包，解压安装&lt;/li>
+&lt;/ul></description></item><item><title>【Linux】可视化桌面</title><link>https://chenyidao.github.io/p/linux%E5%8F%AF%E8%A7%86%E5%8C%96%E6%A1%8C%E9%9D%A2/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/linux%E5%8F%AF%E8%A7%86%E5%8C%96%E6%A1%8C%E9%9D%A2/</guid><description>&lt;h2 id="ubuntu-图形化桌面搭建">ubuntu 图形化桌面搭建&lt;/h2>
+&lt;h3 id="搭建">搭建&lt;/h3>
+&lt;p>参考：https://help.aliyun.com/document_detail/59330.html&lt;/p>
+&lt;h3 id="fqa">FQA&lt;/h3>
+&lt;p>Q：A VNC server is already running as :1&lt;/p>
+&lt;p>A：https://blog.csdn.net/lxyoucan/article/details/119024402&lt;/p>
+&lt;hr>
+&lt;p>Q：装了ubuntu可视化界面，重启可视化界面之后访问不了外网了&lt;/p>
+&lt;p>A：&lt;/p>
+&lt;p>&lt;strong>原因分析&lt;/strong>&lt;/p>
+&lt;p>Ubuntu环境安装桌面环境，安装过程中会覆盖dns解析的配置（即会清空/etc/resolv.conf），导致无法解析任何域名。&lt;/p>
+&lt;p>另外重启等也可能会修改/etc/resolv.conf&lt;/p>
+&lt;p>&lt;strong>解决方法：重新配置代理&lt;/strong>&lt;/p>
+&lt;p>1、先去ping 代理或者对应的IP，如果能ping通，则说明DNS域名解析有问题；如果代理IP都ping不通，那代理本身就有问题。&lt;/p>
+&lt;p>2、如果是DNS域名有问题，排查文件 /etc/resolv.conf内容是否正确
+查看发现里面内容已被覆盖清空，需要重新配置（网上搜一下配置内容）&lt;/p>
+&lt;p>3、配置代理&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">http_proxy&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;http://proxy.xxx.com:8080&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">https_proxy&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;http://proxy.xxx.com:8080&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">ftp_proxy&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;hhttp://proxy.xxx.com:8080&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">no_proxy&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;localhost,127.0.0.1&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
+&lt;p>Q：密码忘记了，如何重置&lt;/p>
+&lt;p>A：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">vncpassword
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
+&lt;p>Q：vnc客户端，偶尔出现死机的情况，重启命令&lt;/p>
+&lt;p>A：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 停止服务&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">vncserver -kill:1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 启动一个新的VNC并指定分辨率&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">vncserver -geometry 1920x1080:1
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
+&lt;p>Q：VNCViewer 与 Windows端文本复制粘贴&lt;/p>
+&lt;p>A：&lt;/p>
+&lt;p>&lt;strong>环境信息&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-tex" data-lang="tex">&lt;span class="line">&lt;span class="cl">主机系统：Win10
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">VNCViewer端：Ubuntu
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>解决方法&lt;/strong>&lt;/p>
+&lt;p>1、ubuntu下载工具 autocutsel&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">sudo apt install autocutsel
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>2、运行（-f 在后台运行）&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">autocutsel -f
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="openeuler-安装远程桌面登录-vnc和gnome的安装">OpenEuler 安装远程桌面登录 VNC和GNOME的安装&lt;/h2>
+&lt;p>参考：https://blog.csdn.net/huangsxint/article/details/115025519&lt;/p>
+&lt;p>vnc：root/Huawei@123&lt;/p></description></item><item><title>【开发工具】常用开发工具</title><link>https://chenyidao.github.io/p/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%B8%B8%E7%94%A8%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%B8%B8%E7%94%A8%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</guid><description>&lt;h1 id="常用开发工具">常用开发工具&lt;/h1>
 &lt;h2 id="网站类">网站类&lt;/h2>
 &lt;p>1、&lt;a class="link" href="https://unbug.github.io/codelf/" target="_blank" rel="noopener"
 >codeIf&lt;/a>&lt;/p>
@@ -1466,26 +1583,7 @@ Pexels&lt;/p>
 &lt;p>&lt;a class="link" href="https://github.com/docs4dev/docs4dev00" target="_blank" rel="noopener"
 >Spring相关中文文档&lt;/a>
 &lt;a class="link" href="https://www.bilibili.com/video/BV11A411L7CK?p=33&amp;amp;spm_id_from=333.880.my_history.page.click" target="_blank" rel="noopener"
->尚硅谷 Spark 教程&lt;/a>&lt;/p></description></item><item><title>linux 常用操作</title><link>https://chenyidao.github.io/p/linux-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/linux-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid><description>&lt;h2 id="linux-动态库搜索方式">linux 动态库搜索方式&lt;/h2>
-&lt;h2 id="软连接">软连接&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 在/opt/lib/下建立一个软连接 ss.so 引向 /usr/local/lib/ss.so&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ln -s /usr/local/lib/ss.so /opt/lib/ss.so
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="ccache安装">ccache安装&lt;/h2>
-&lt;p>为了加快 c++ 代码编译&lt;/p>
-&lt;p>参考：https://blog.csdn.net/w13635739860/article/details/99288899&lt;/p>
-&lt;h2 id="linux-软件安装方式">linux 软件安装方式&lt;/h2>
-&lt;ul>
-&lt;li>在线安装，比如apt install，yum install等方式&lt;/li>
-&lt;li>离线安装，下载二进制软件包，一般是压缩包，解压安装&lt;/li>
-&lt;/ul></description></item><item><title>调试</title><link>https://chenyidao.github.io/p/%E8%B0%83%E8%AF%95/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/%E8%B0%83%E8%AF%95/</guid><description>&lt;h2 id="代码调试概述">代码调试概述&lt;/h2>
+>尚硅谷 Spark 教程&lt;/a>&lt;/p></description></item><item><title>调试</title><link>https://chenyidao.github.io/p/%E8%B0%83%E8%AF%95/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/%E8%B0%83%E8%AF%95/</guid><description>&lt;h2 id="代码调试概述">代码调试概述&lt;/h2>
 &lt;h3 id="前言">前言&lt;/h3>
 &lt;p>​ 有时候我们写出来的代码与预期处理结果不符，或者可能潜在一些bug，需要我们去修复；那么如何复现并快速定位到问题成为了关键，由于篇幅有限，本篇主要讨论问题复现（即debug），问题定位下一次再相互学习和讨论。&lt;/p>
 &lt;p>​ 一般而言，我们开发流程是，在本地Window系统上开发完代码，然后将代码放在linux机器上跑。假如这时候我们要通过一个UT在本地调测一下我们写的函数表现是否符合预期。这个时候远程调试就发挥作用了。&lt;/p>
@@ -2138,102 +2236,4 @@ alt="image-20220601173354172"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>图形化界面</title><link>https://chenyidao.github.io/p/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%95%8C%E9%9D%A2/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%95%8C%E9%9D%A2/</guid><description>&lt;h2 id="ubuntu-图形化桌面搭建">ubuntu 图形化桌面搭建&lt;/h2>
-&lt;h3 id="搭建">搭建&lt;/h3>
-&lt;p>参考：https://help.aliyun.com/document_detail/59330.html&lt;/p>
-&lt;h3 id="fqa">FQA&lt;/h3>
-&lt;p>Q：A VNC server is already running as :1&lt;/p>
-&lt;p>A：https://blog.csdn.net/lxyoucan/article/details/119024402&lt;/p>
-&lt;hr>
-&lt;p>Q：装了ubuntu可视化界面，重启可视化界面之后访问不了外网了&lt;/p>
-&lt;p>A：&lt;/p>
-&lt;p>&lt;strong>原因分析&lt;/strong>&lt;/p>
-&lt;p>Ubuntu环境安装桌面环境，安装过程中会覆盖dns解析的配置（即会清空/etc/resolv.conf），导致无法解析任何域名。&lt;/p>
-&lt;p>另外重启等也可能会修改/etc/resolv.conf&lt;/p>
-&lt;p>&lt;strong>解决方法：重新配置代理&lt;/strong>&lt;/p>
-&lt;p>1、先去ping 代理或者对应的IP，如果能ping通，则说明DNS域名解析有问题；如果代理IP都ping不通，那代理本身就有问题。&lt;/p>
-&lt;p>2、如果是DNS域名有问题，排查文件 /etc/resolv.conf内容是否正确
-查看发现里面内容已被覆盖清空，需要重新配置（网上搜一下配置内容）&lt;/p>
-&lt;p>3、配置代理&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">http_proxy&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;http://proxy.xxx.com:8080&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">https_proxy&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;http://proxy.xxx.com:8080&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">ftp_proxy&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;hhttp://proxy.xxx.com:8080&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">no_proxy&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;localhost,127.0.0.1&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;hr>
-&lt;p>Q：密码忘记了，如何重置&lt;/p>
-&lt;p>A：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">vncpassword
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;hr>
-&lt;p>Q：vnc客户端，偶尔出现死机的情况，重启命令&lt;/p>
-&lt;p>A：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 停止服务&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">vncserver -kill:1
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 启动一个新的VNC并指定分辨率&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">vncserver -geometry 1920x1080:1
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;hr>
-&lt;p>Q：VNCViewer 与 Windows端文本复制粘贴&lt;/p>
-&lt;p>A：&lt;/p>
-&lt;p>&lt;strong>环境信息&lt;/strong>&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-tex" data-lang="tex">&lt;span class="line">&lt;span class="cl">主机系统：Win10
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">VNCViewer端：Ubuntu
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;strong>解决方法&lt;/strong>&lt;/p>
-&lt;p>1、ubuntu下载工具 autocutsel&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">sudo apt install autocutsel
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>2、运行（-f 在后台运行）&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">autocutsel -f
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="openeuler-安装远程桌面登录-vnc和gnome的安装">OpenEuler 安装远程桌面登录 VNC和GNOME的安装&lt;/h2>
-&lt;p>参考：https://blog.csdn.net/huangsxint/article/details/115025519&lt;/p>
-&lt;p>vnc：root/Huawei@123&lt;/p></description></item></channel></rss>
+&lt;/div></description></item></channel></rss>

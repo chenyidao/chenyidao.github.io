@@ -10,98 +10,7 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">JAVA_HOME&lt;/span>&lt;span class="o">=&lt;/span>/home/jdk-1.8
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;hr></description></item><item><title>【开发工具】常用开发工具</title><link>https://chenyidao.github.io/p/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%B8%B8%E7%94%A8%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%B8%B8%E7%94%A8%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</guid><description>&lt;h1 id="常用开发工具">常用开发工具&lt;/h1>
-&lt;h2 id="网站类">网站类&lt;/h2>
-&lt;p>1、&lt;a class="link" href="https://unbug.github.io/codelf/" target="_blank" rel="noopener"
->codeIf&lt;/a>&lt;/p>
-&lt;p>命名网站&lt;/p>
-&lt;p>2、 &lt;a class="link" href="https://tool.lu/" target="_blank" rel="noopener"
->tool.lu/&lt;/a>&lt;/p>
-&lt;p>在线格式化各种语言代码工具&lt;/p>
-&lt;p>3、 &lt;a class="link" href="[https://how2j.cn/]%28https://how2j.cn/%29" >java 教程网站&lt;/a>&lt;/p>
-&lt;p>4、 &lt;a class="link" href="https://docschina.org/" target="_blank" rel="noopener"
->印记中文&lt;/a>&lt;/p>
-&lt;p>前端各种中文文档&lt;/p>
-&lt;p>5、 新手入门编程教学网站
-&lt;a class="link" href="https://www.runoob.com/" target="_blank" rel="noopener"
->菜鸟教程&lt;/a>
-&lt;a class="link" href="https://www.w3school.com.cn/" target="_blank" rel="noopener"
->w3school&lt;/a>&lt;/p>
-&lt;p>6、 &lt;a class="link" href="https://c.runoob.com/" target="_blank" rel="noopener"
->菜鸟工具&lt;/a>&lt;/p>
-&lt;p>各种编程工具（正则表达式测试、Json在线解析、代码转换等等）&lt;/p>
-&lt;p>7、 &lt;a class="link" href="https://kaifa.baidu.com/" target="_blank" rel="noopener"
->开发者搜索&lt;/a>&lt;/p>
-&lt;p>过滤掉一些广告&lt;/p>
-&lt;p>8、 &lt;a class="link" href="https://hellogithub.com/" target="_blank" rel="noopener"
->Hellogithub&lt;/a>&lt;/p>
-&lt;p>有趣开源项目&lt;/p>
-&lt;h2 id="博客类">博客类&lt;/h2>
-&lt;p>1、&lt;a class="link" href="https://www.csdn.net/" target="_blank" rel="noopener"
->csdn 博客&lt;/a>&lt;/p>
-&lt;p>2、&lt;a class="link" href="https://juejin.cn/backend" target="_blank" rel="noopener"
->掘金&lt;/a> 专注于开发的博客网站&lt;/p>
-&lt;p>3、&lt;a class="link" href="https://www.cnblogs.com/cate/java/" target="_blank" rel="noopener"
->博客园&lt;/a> 经典的程序员博客网站&lt;/p>
-&lt;p>4、&lt;a class="link" href="https://www.infoq.cn/" target="_blank" rel="noopener"
->infoQ&lt;/a> 前沿技术的探讨&lt;/p>
-&lt;h2 id="画图工具">画图工具&lt;/h2>
-&lt;p>&lt;strong>EdrawMax&lt;/strong>
-流程图、思维导图、UML类图、时序图等，比较全面
-&lt;a class="link" href="https://www.edrawsoft.cn/ad/ytts-maker-edrawmax.html?channel=baidu&amp;amp;bd_vid=7207837347265926434" target="_blank" rel="noopener"
->下载地址&lt;/a>&lt;/p>
-&lt;p>&lt;strong>MindMaster&lt;/strong>
-思维导图
-&lt;a class="link" href="https://www.edrawsoft.cn/mindmaster/lp-1.html?channel=baidu&amp;amp;bd_vid=8680297844288107498" target="_blank" rel="noopener"
->下载地址&lt;/a>&lt;/p>
-&lt;p>&lt;strong>在线思维导图&lt;/strong>&lt;/p>
-&lt;p>&lt;a class="link" href="https://www.zhixi.com/" target="_blank" rel="noopener"
->知犀&lt;/a>&lt;/p>
-&lt;h2 id="软件类">软件类&lt;/h2>
-&lt;p>&lt;strong>浏览器&lt;/strong>
-谷歌、火狐 =========== 插件安装方便&lt;/p>
-&lt;p>&lt;strong>写代码工具&lt;/strong>
-大项目开发（重量级）：IDE 系列（IDEA、Clion）
-小项目开发、代码片段（轻量级）：vs code、sublime Text&lt;/p>
-&lt;p>&lt;strong>小程序&lt;/strong>
-微信开发者工具&lt;/p>
-&lt;p>&lt;strong>美化终端&lt;/strong>
-window：windows terminal
-linux： xshell、xftp&lt;/p>
-&lt;p>&lt;strong>资源管理&lt;/strong>
-可视化数据库管理系统：navicat、SQLyog&lt;/p>
-&lt;p>&lt;strong>Java 性能分析&lt;/strong>
-Jprofier：jvm性能分析&lt;/p>
-&lt;p>arthas：阿里巴巴jvm性能分析工具&lt;/p>
-&lt;p>&lt;strong>办公软件&lt;/strong>
-滴答清单：记录每日待办事项，以及要完成的目标
-腾讯会议
-腾讯文档（和他人协作）
-Clover ：打开多个文件像浏览器一样窗口化
-everyting：本地文件搜索神器&lt;/p>
-&lt;p>文本编辑器：Notepad++&lt;/p>
-&lt;p>Typora：markdown文档编辑器&lt;/p>
-&lt;p>截图工具：Snipaste&lt;/p>
-&lt;p>录屏软件：FastStone Capture 录屏录像&lt;/p>
-&lt;p>​ &lt;img src="https://img-blog.csdnimg.cn/56a620b74aa1420095dfbf3b1d35482f.png"
-loading="lazy"
-alt="在这里插入图片描述"
->&lt;/p>
-&lt;p>&lt;strong>创作软件&lt;/strong>&lt;/p>
-&lt;p>美图秀秀 修图
-剪印 剪辑视频
-懒人 Excel
-第一ppt
-爱给网
-Pexels&lt;/p>
-&lt;p>免费图库网站：&lt;/p>
-&lt;p>百度&lt;/p>
-&lt;p>好看CSS背景颜色：https://pxlab.cn/color/index.html&lt;/p>
-&lt;h2 id="学习资源类">学习资源类&lt;/h2>
-&lt;p>&lt;a class="link" href="https://github.com/docs4dev/docs4dev00" target="_blank" rel="noopener"
->Spring相关中文文档&lt;/a>
-&lt;a class="link" href="https://www.bilibili.com/video/BV11A411L7CK?p=33&amp;amp;spm_id_from=333.880.my_history.page.click" target="_blank" rel="noopener"
->尚硅谷 Spark 教程&lt;/a>&lt;/p></description></item><item><title>linux 常用操作</title><link>https://chenyidao.github.io/p/linux-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/linux-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid><description>&lt;h2 id="linux-动态库搜索方式">linux 动态库搜索方式&lt;/h2>
+&lt;/div>&lt;hr></description></item><item><title>【Linux】Linux 常用操作</title><link>https://chenyidao.github.io/p/linuxlinux-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/linuxlinux-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid><description>&lt;h2 id="linux-动态库搜索方式">linux 动态库搜索方式&lt;/h2>
 &lt;h2 id="软连接">软连接&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -120,56 +29,7 @@ Pexels&lt;/p>
 &lt;ul>
 &lt;li>在线安装，比如apt install，yum install等方式&lt;/li>
 &lt;li>离线安装，下载二进制软件包，一般是压缩包，解压安装&lt;/li>
-&lt;/ul></description></item><item><title>软件激活</title><link>https://chenyidao.github.io/p/%E8%BD%AF%E4%BB%B6%E6%BF%80%E6%B4%BB/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/%E8%BD%AF%E4%BB%B6%E6%BF%80%E6%B4%BB/</guid><description>&lt;h1 id="各种软件激活">各种软件激活&lt;/h1>
-&lt;h2 id="typora">typora&lt;/h2>
-&lt;p>2022-08-17 日激活&lt;/p>
-&lt;p>参考激活方式：https://www.cnblogs.com/hackettt/p/16335288.html&lt;/p>
-&lt;h3 id="下载">下载&lt;/h3>
-&lt;p>&lt;a class="link" href="https://typoraio.cn/" target="_blank" rel="noopener"
->typora官方中文站&lt;/a>：https://typoraio.cn/ （ps：高版本的可能会出现Error问题，网盘资源中的typora版本亲测没问题）&lt;/p>
-&lt;p>百度云网盘资源：&lt;/p>
-&lt;p>链接：&lt;a class="link" href="https://pan.baidu.com/s/1QDXiR3kAn4ZgnT9nhM2qiA" target="_blank" rel="noopener"
->https://pan.baidu.com/s/1QDXiR3kAn4ZgnT9nhM2qiA&lt;/a>&lt;/p>
-&lt;p>提取码：w7ww&lt;/p>
-&lt;p>资源中有3个文件&lt;/p>
-&lt;p>&lt;img src="https://chenyidao.github.io/typora%e7%a0%b4%e8%a7%a3.png"
-loading="lazy"
-alt="Photo by Florian Klauer on Unsplash"
->&lt;/p>
-&lt;p>&lt;strong>当前已经保存到我的百度网盘，/typora激活目录下&lt;/strong>&lt;/p>
-&lt;h3 id="破解">破解&lt;/h3>
-&lt;p>&lt;strong>替换app.asar文件&lt;/strong>&lt;/p>
-&lt;p>typora安装后，将百度云盘下载的app.asar.txt 文件中的后缀.txt去掉，并拷贝到typora安装路径下替换&lt;/p>
-&lt;p>我的路径是：D:\Typora\resources 根据自己的安装路径进行替换&lt;/p>
-&lt;p>​ &lt;img src="https://typora-1304221450.cos.ap-guangzhou.myqcloud.com/typora/image-20220601172416583.png"
-loading="lazy"
-alt="img"
->&lt;/p>
-&lt;p>&lt;strong>提示&lt;/strong>
-若文件名中未展示扩展名（.txt），请打开计算机，查看，勾选文件扩展名，使文件显示扩展名&lt;/p>
-&lt;p>​ &lt;img src="https://typora-1304221450.cos.ap-guangzhou.myqcloud.com/typora/image-20220601172533080.png"
-loading="lazy"
-alt="img"
->&lt;/p>
-&lt;h3 id="输入序列号激活">输入序列号激活&lt;/h3>
-&lt;ul>
-&lt;li>
-&lt;p>打开 typora ，点击“输入序列号”：&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>邮箱一栏中任意填写（但须保证邮箱地址格式正确），输入序列号(&lt;strong>在key.txt文件中，任选一条&lt;/strong>)，点击“激活”。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>出现已激活即可&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>​ &lt;img src="https://typora-1304221450.cos.ap-guangzhou.myqcloud.com/typora/image-20220601173354172.png"
-loading="lazy"
-alt="image-20220601173354172"
->&lt;/p>
-&lt;h2 id="idea-激活">IDEA 激活&lt;/h2>
-&lt;p>2022-06-06日激活&lt;/p>
-&lt;p>参考：https://www.cnblogs.com/fanbi/p/16227293.html&lt;/p></description></item><item><title>图形化界面</title><link>https://chenyidao.github.io/p/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%95%8C%E9%9D%A2/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%95%8C%E9%9D%A2/</guid><description>&lt;h2 id="ubuntu-图形化桌面搭建">ubuntu 图形化桌面搭建&lt;/h2>
+&lt;/ul></description></item><item><title>【Linux】可视化桌面</title><link>https://chenyidao.github.io/p/linux%E5%8F%AF%E8%A7%86%E5%8C%96%E6%A1%8C%E9%9D%A2/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/linux%E5%8F%AF%E8%A7%86%E5%8C%96%E6%A1%8C%E9%9D%A2/</guid><description>&lt;h2 id="ubuntu-图形化桌面搭建">ubuntu 图形化桌面搭建&lt;/h2>
 &lt;h3 id="搭建">搭建&lt;/h3>
 &lt;p>参考：https://help.aliyun.com/document_detail/59330.html&lt;/p>
 &lt;h3 id="fqa">FQA&lt;/h3>
@@ -267,4 +127,144 @@ alt="image-20220601173354172"
 &lt;/div>
 &lt;/div>&lt;h2 id="openeuler-安装远程桌面登录-vnc和gnome的安装">OpenEuler 安装远程桌面登录 VNC和GNOME的安装&lt;/h2>
 &lt;p>参考：https://blog.csdn.net/huangsxint/article/details/115025519&lt;/p>
-&lt;p>vnc：root/Huawei@123&lt;/p></description></item></channel></rss>
+&lt;p>vnc：root/Huawei@123&lt;/p></description></item><item><title>【开发工具】常用开发工具</title><link>https://chenyidao.github.io/p/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%B8%B8%E7%94%A8%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%B8%B8%E7%94%A8%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</guid><description>&lt;h1 id="常用开发工具">常用开发工具&lt;/h1>
+&lt;h2 id="网站类">网站类&lt;/h2>
+&lt;p>1、&lt;a class="link" href="https://unbug.github.io/codelf/" target="_blank" rel="noopener"
+>codeIf&lt;/a>&lt;/p>
+&lt;p>命名网站&lt;/p>
+&lt;p>2、 &lt;a class="link" href="https://tool.lu/" target="_blank" rel="noopener"
+>tool.lu/&lt;/a>&lt;/p>
+&lt;p>在线格式化各种语言代码工具&lt;/p>
+&lt;p>3、 &lt;a class="link" href="[https://how2j.cn/]%28https://how2j.cn/%29" >java 教程网站&lt;/a>&lt;/p>
+&lt;p>4、 &lt;a class="link" href="https://docschina.org/" target="_blank" rel="noopener"
+>印记中文&lt;/a>&lt;/p>
+&lt;p>前端各种中文文档&lt;/p>
+&lt;p>5、 新手入门编程教学网站
+&lt;a class="link" href="https://www.runoob.com/" target="_blank" rel="noopener"
+>菜鸟教程&lt;/a>
+&lt;a class="link" href="https://www.w3school.com.cn/" target="_blank" rel="noopener"
+>w3school&lt;/a>&lt;/p>
+&lt;p>6、 &lt;a class="link" href="https://c.runoob.com/" target="_blank" rel="noopener"
+>菜鸟工具&lt;/a>&lt;/p>
+&lt;p>各种编程工具（正则表达式测试、Json在线解析、代码转换等等）&lt;/p>
+&lt;p>7、 &lt;a class="link" href="https://kaifa.baidu.com/" target="_blank" rel="noopener"
+>开发者搜索&lt;/a>&lt;/p>
+&lt;p>过滤掉一些广告&lt;/p>
+&lt;p>8、 &lt;a class="link" href="https://hellogithub.com/" target="_blank" rel="noopener"
+>Hellogithub&lt;/a>&lt;/p>
+&lt;p>有趣开源项目&lt;/p>
+&lt;h2 id="博客类">博客类&lt;/h2>
+&lt;p>1、&lt;a class="link" href="https://www.csdn.net/" target="_blank" rel="noopener"
+>csdn 博客&lt;/a>&lt;/p>
+&lt;p>2、&lt;a class="link" href="https://juejin.cn/backend" target="_blank" rel="noopener"
+>掘金&lt;/a> 专注于开发的博客网站&lt;/p>
+&lt;p>3、&lt;a class="link" href="https://www.cnblogs.com/cate/java/" target="_blank" rel="noopener"
+>博客园&lt;/a> 经典的程序员博客网站&lt;/p>
+&lt;p>4、&lt;a class="link" href="https://www.infoq.cn/" target="_blank" rel="noopener"
+>infoQ&lt;/a> 前沿技术的探讨&lt;/p>
+&lt;h2 id="画图工具">画图工具&lt;/h2>
+&lt;p>&lt;strong>EdrawMax&lt;/strong>
+流程图、思维导图、UML类图、时序图等，比较全面
+&lt;a class="link" href="https://www.edrawsoft.cn/ad/ytts-maker-edrawmax.html?channel=baidu&amp;amp;bd_vid=7207837347265926434" target="_blank" rel="noopener"
+>下载地址&lt;/a>&lt;/p>
+&lt;p>&lt;strong>MindMaster&lt;/strong>
+思维导图
+&lt;a class="link" href="https://www.edrawsoft.cn/mindmaster/lp-1.html?channel=baidu&amp;amp;bd_vid=8680297844288107498" target="_blank" rel="noopener"
+>下载地址&lt;/a>&lt;/p>
+&lt;p>&lt;strong>在线思维导图&lt;/strong>&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.zhixi.com/" target="_blank" rel="noopener"
+>知犀&lt;/a>&lt;/p>
+&lt;h2 id="软件类">软件类&lt;/h2>
+&lt;p>&lt;strong>浏览器&lt;/strong>
+谷歌、火狐 =========== 插件安装方便&lt;/p>
+&lt;p>&lt;strong>写代码工具&lt;/strong>
+大项目开发（重量级）：IDE 系列（IDEA、Clion）
+小项目开发、代码片段（轻量级）：vs code、sublime Text&lt;/p>
+&lt;p>&lt;strong>小程序&lt;/strong>
+微信开发者工具&lt;/p>
+&lt;p>&lt;strong>美化终端&lt;/strong>
+window：windows terminal
+linux： xshell、xftp&lt;/p>
+&lt;p>&lt;strong>资源管理&lt;/strong>
+可视化数据库管理系统：navicat、SQLyog&lt;/p>
+&lt;p>&lt;strong>Java 性能分析&lt;/strong>
+Jprofier：jvm性能分析&lt;/p>
+&lt;p>arthas：阿里巴巴jvm性能分析工具&lt;/p>
+&lt;p>&lt;strong>办公软件&lt;/strong>
+滴答清单：记录每日待办事项，以及要完成的目标
+腾讯会议
+腾讯文档（和他人协作）
+Clover ：打开多个文件像浏览器一样窗口化
+everyting：本地文件搜索神器&lt;/p>
+&lt;p>文本编辑器：Notepad++&lt;/p>
+&lt;p>Typora：markdown文档编辑器&lt;/p>
+&lt;p>截图工具：Snipaste&lt;/p>
+&lt;p>录屏软件：FastStone Capture 录屏录像&lt;/p>
+&lt;p>​ &lt;img src="https://img-blog.csdnimg.cn/56a620b74aa1420095dfbf3b1d35482f.png"
+loading="lazy"
+alt="在这里插入图片描述"
+>&lt;/p>
+&lt;p>&lt;strong>创作软件&lt;/strong>&lt;/p>
+&lt;p>美图秀秀 修图
+剪印 剪辑视频
+懒人 Excel
+第一ppt
+爱给网
+Pexels&lt;/p>
+&lt;p>免费图库网站：&lt;/p>
+&lt;p>百度&lt;/p>
+&lt;p>好看CSS背景颜色：https://pxlab.cn/color/index.html&lt;/p>
+&lt;h2 id="学习资源类">学习资源类&lt;/h2>
+&lt;p>&lt;a class="link" href="https://github.com/docs4dev/docs4dev00" target="_blank" rel="noopener"
+>Spring相关中文文档&lt;/a>
+&lt;a class="link" href="https://www.bilibili.com/video/BV11A411L7CK?p=33&amp;amp;spm_id_from=333.880.my_history.page.click" target="_blank" rel="noopener"
+>尚硅谷 Spark 教程&lt;/a>&lt;/p></description></item><item><title>软件激活</title><link>https://chenyidao.github.io/p/%E8%BD%AF%E4%BB%B6%E6%BF%80%E6%B4%BB/</link><pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate><guid>https://chenyidao.github.io/p/%E8%BD%AF%E4%BB%B6%E6%BF%80%E6%B4%BB/</guid><description>&lt;h1 id="各种软件激活">各种软件激活&lt;/h1>
+&lt;h2 id="typora">typora&lt;/h2>
+&lt;p>2022-08-17 日激活&lt;/p>
+&lt;p>参考激活方式：https://www.cnblogs.com/hackettt/p/16335288.html&lt;/p>
+&lt;h3 id="下载">下载&lt;/h3>
+&lt;p>&lt;a class="link" href="https://typoraio.cn/" target="_blank" rel="noopener"
+>typora官方中文站&lt;/a>：https://typoraio.cn/ （ps：高版本的可能会出现Error问题，网盘资源中的typora版本亲测没问题）&lt;/p>
+&lt;p>百度云网盘资源：&lt;/p>
+&lt;p>链接：&lt;a class="link" href="https://pan.baidu.com/s/1QDXiR3kAn4ZgnT9nhM2qiA" target="_blank" rel="noopener"
+>https://pan.baidu.com/s/1QDXiR3kAn4ZgnT9nhM2qiA&lt;/a>&lt;/p>
+&lt;p>提取码：w7ww&lt;/p>
+&lt;p>资源中有3个文件&lt;/p>
+&lt;p>&lt;img src="https://chenyidao.github.io/typora%e7%a0%b4%e8%a7%a3.png"
+loading="lazy"
+alt="Photo by Florian Klauer on Unsplash"
+>&lt;/p>
+&lt;p>&lt;strong>当前已经保存到我的百度网盘，/typora激活目录下&lt;/strong>&lt;/p>
+&lt;h3 id="破解">破解&lt;/h3>
+&lt;p>&lt;strong>替换app.asar文件&lt;/strong>&lt;/p>
+&lt;p>typora安装后，将百度云盘下载的app.asar.txt 文件中的后缀.txt去掉，并拷贝到typora安装路径下替换&lt;/p>
+&lt;p>我的路径是：D:\Typora\resources 根据自己的安装路径进行替换&lt;/p>
+&lt;p>​ &lt;img src="https://typora-1304221450.cos.ap-guangzhou.myqcloud.com/typora/image-20220601172416583.png"
+loading="lazy"
+alt="img"
+>&lt;/p>
+&lt;p>&lt;strong>提示&lt;/strong>
+若文件名中未展示扩展名（.txt），请打开计算机，查看，勾选文件扩展名，使文件显示扩展名&lt;/p>
+&lt;p>​ &lt;img src="https://typora-1304221450.cos.ap-guangzhou.myqcloud.com/typora/image-20220601172533080.png"
+loading="lazy"
+alt="img"
+>&lt;/p>
+&lt;h3 id="输入序列号激活">输入序列号激活&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>打开 typora ，点击“输入序列号”：&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>邮箱一栏中任意填写（但须保证邮箱地址格式正确），输入序列号(&lt;strong>在key.txt文件中，任选一条&lt;/strong>)，点击“激活”。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>出现已激活即可&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>​ &lt;img src="https://typora-1304221450.cos.ap-guangzhou.myqcloud.com/typora/image-20220601173354172.png"
+loading="lazy"
+alt="image-20220601173354172"
+>&lt;/p>
+&lt;h2 id="idea-激活">IDEA 激活&lt;/h2>
+&lt;p>2022-06-06日激活&lt;/p>
+&lt;p>参考：https://www.cnblogs.com/fanbi/p/16227293.html&lt;/p></description></item></channel></rss>
